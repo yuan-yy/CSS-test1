@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .outside {
+        height: 500px;
+        width: 805px;
+        z-index: 3;
+        border-right: 0.01px solid #D4D4D4;
+        border-bottom: 0.01px solid #D4D4D4;
+        background-image: url("Picture/5.jpg");
+
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .outside .picture_one {
+        position: relative;
+        z-index: 20;
+        width: 395px;
+        height: 100%;
+        border: 1px solid black;
+        background-color: rgb(255, 112, 157);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+    }
+
+    .outside .picture_one .title {
+        color: white;
+        margin-top: 30px;
+        margin-left: 20px;
+        font-size: 26px;
+
+    }
+
+    .outside .picture_one .introduce {
+        color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-weight: 550px;
+    }
+
+    .outside .picture_one .introduce p {
+
+        line-height: 25px;
+    }
+
+    .outside .picture_one #btn {
+        background-color: rgb(255, 55, 120);
+        color: white;
+        border: 0;
+        width: 90px;
+        height: 40px;
+        margin-top: -20px;
+    }
+
+    .outside .picture_one .btn {
+        position: relative;
+        right: 20px;
+        top: 334px;
+    }
+
+
+    .outside .picture_two {
+        margin-top: 50px;
+        margin-left: -300px;
+        width: 395px;
+        height: 80%;
+        border: 1px solid black;
+        background-color: rgb(255, 112, 157);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.6;
+
+    }
+
+    .outside .picture_two .title p {
+        font-size: 60px;
+        color: pink;
+    }
+
+    .outside .picture_two .btn button {
+        background-color: rgb(255, 112, 157);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        font-size: 20px;
+        margin-top: 50px;
+        border: 0;
+
+    }
+</style>
+
+<body>
+    <div class="outside">
+        <div class="picture_one">
+
+            <div>
+                <div class="title">
+                    <p>全场正品</p>
+                </div>
+
+                <div class="introduce">
+                    <p>用心搜罗世界名牌并独家代理多个知名品牌为图片提供价格相宜</p>
+                </div>
+            </div>
+            <div class="btn">
+                <button id="btn">
+                    查看更多
+                </button>
+
+            </div>
+
+        </div>
+        <div class="picture_two">
+            <div class="title">
+                <p>保健生活馆</p>
+
+            </div>
+
+            <div class="btn">
+                <button>
+                    点击进入，开启你的模式
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+<script src="jquery.min.js"></script>
+
+
+<script>
+    $(".picture_one").mouseenter(function () {
+        $(".picture_one").css({
+            "position": "relative",
+            "z-index": 30,
+            "width": "395px",
+            "height": "100%",
+            "border": "1px solid black",
+            "background-color": "rgb(225, 112, 157)",
+            "display": "flex",
+            "flex-direction": "column",
+            "justify-content": "flex-start",
+            "align-items": "flex-end",
+            "margin-left": "0px",
+            "opacity": "1",
+            "margin-top": "0px",
+        });
+
+        $(".picture_two").css({
+            "position": "relative",
+            "z-index": 20,
+            "margin-top": "50px",
+            "margin-left": "-300px",
+            "width": "395px",
+            "height": "80%",
+            "border": "1px solid black",
+            "background-color": "rgb(255, 112, 157)",
+            "display": "flex",
+            "flex-direction": "column",
+            "justify-content": "center",
+            "align-items": "center",
+            "opacity": "0.6",
+        })
+        $(".outside .picture_one .btn").css({
+            "top": "334px"
+        })
+    })
+
+    $(".picture_two").mouseenter(function () {
+        $(".picture_two").css({
+            "position": "relative",
+            "z-index": 30,
+            "margin-top": "0px",
+            "margin-left": "-490px",
+            "width": "392.5px",
+            "height": "100%",
+            "border": "1px solid black",
+            "background-color": "rgb(255, 112, 157)",
+            "display": "flex",
+            "flex-direction": "column",
+            "justify-content": "center",
+            "align-items": "center",
+            "opacity": "1",
+        });
+        $(".picture_one").css({
+            "margin-top": "50px",
+            "position": "relative",
+            "z-index": 30,
+            "margin-left": "95px",
+            "width": "395px",
+            "height": "80%",
+            "border": "1px solid black",
+            "background-color": "rgb(225, 112, 157)",
+            "display": "flex",
+            "flex-direction": "column",
+            "justify-content": "flex-start",
+            "align-items": "flex-end",
+            "opacity": "0.6",
+
+        });
+        $(".outside .picture_one .btn").css({
+            "top": "219px",
+        })
+
+    })
+    //     $(".picture_one").css({
+    //         "margin-top": "50px",
+    //     "margin-left": "-300px",
+    //     "width": "395px",
+    //     "height": "80%",
+    //     "border": "1px solid black",
+    //     "background-color": "rgb(255, 112, 157)",
+    //     "display": "flex",
+    //     "flex-direction": "column",
+    //     "justify-content": "center",
+    //     "align-items": "center",
+    //     "opacity": "0.6",
+    //     })
+    // })
+</script>
+
+
+</html>

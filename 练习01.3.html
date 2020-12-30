@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    p{
+        margin: 0;
+        padding:0;
+    }
+    .outside{
+        height: 630px;
+        width: 680px;
+        z-index: 3;
+        border-right: 0.01px solid #D4D4D4;
+        border-bottom: 0.01px solid #D4D4D4;
+        border-top:1px solid white;
+        border-left:1px solid white;
+    }
+    .content{
+    width: 600px;
+    height: 510px;
+    margin-left: 15px;
+    margin-top: 60px;
+    background:white;
+    z-index: 100;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, .05);
+    border-bottom: 4px solid red;
+    }
+
+    .outside .content .image{
+        width: 100%;
+        height: 70%
+    }
+    .outside .content .image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .outside .content .introduce_word{
+        margin-top:10px;
+        margin-left: 10px;
+    }
+    .outside .content .introduce_word .introduce_word_1 p{
+        color:red;
+        font-size: 41px;
+        margin-top: 12px;
+    }
+    .outside .content .introduce_word .introduce_word_2 p{
+        margin-top: 15px;
+        color: #D3D3D3;
+        font-weight: 550;
+        font-size: 29px;
+    }
+</style>
+<body>
+    <div class="outside">
+        <div class="content">
+            <div class="image">
+                <img src="./Picture/3.png">
+
+            </div>
+            <div class="introduce_word">
+                <div class="introduce_word_1">
+                    <p>奢宠挚爱 尊享套装</p>
+                </div>
+                <div class="introduce_word_2">
+                    <p>核心基础拥有深海海洋复合体能量</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

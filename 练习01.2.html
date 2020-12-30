@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.div{
+    margin:0px; padding:0px;
+}
+p{
+    margin:0px; padding:0px;
+}
+.outside{
+    background: #F7FCF9;
+    border: 1px solid black;
+    height: 520px;
+    width: 420px;
+    z-index: 3;
+}
+.outside .content{
+
+    width: 388px;
+    height: 480px;
+    margin-left: 13px;
+    margin-top: 20px;
+    background:white;
+    z-index: 100;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, .05);
+}
+
+.outside .content .image{
+    width:388px;
+    height: 243px;
+
+
+}
+
+.outside .content img{
+    width: 100%;
+    height: 100%;
+}
+
+.outside .content .introduce{
+    margin-top: 3px;
+    width: 330px;
+    height: 40%;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.outside .content .introduce .ReleaseDate{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+.outside .content .introduce .introduce_word p{
+    margin-top:44px;
+    line-height: 1.8em;
+}
+
+.outside .content .introduce .ReleaseDate .ReleaseDate_words{
+    font-family: fangsong;
+    margin-top: 30px;
+    margin-bottom: 9px;
+}
+
+.outside .content .introduce .ReleaseDate .ReleaseDate_sx{
+    font-family: fangsong;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.outside .content .introduce .ReleaseDate .ReleaseDate_date{
+    color: red;
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+
+.outside .content .introduce  .troduce_words p{
+    margin-top:15px
+}
+</style>
+
+<body>
+    <div class="outside">
+
+        <div class="content">
+            <div class="image">
+                <img src="./Picture/2.png">
+            </div>
+            <div class="introduce">
+                    <div class="introduce_word">
+                        <p>施华蔻是来自德国的全球顶级美发品牌，至今已拥有119年历史，发明了洗发水和shampoo这个单词，可谓美发造型界的...</p>
+                    </div>
+                    <div class="ReleaseDate">
+                        <div class="ReleaseDate_words">发布日期</div>
+                        <div class="ReleaseDate_sx">|</div>
+                        <div class="ReleaseDate_date">2077.10.09</div>
+                    </div>
+                    <div class="troduce_words">
+                        <p>施华蔻迎来首位创型官 联手张杰颠覆...</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

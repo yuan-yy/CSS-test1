@@ -1,0 +1,142 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    * {
+        margin:0;
+        padding:0;
+    }
+    .outside{
+        width:1170px;
+        height: 220px;
+        display: grid;
+        grid-template-columns: 35px auto 35px;
+        border:1px solid black;
+    }
+
+    .left{
+        width:20px;
+        /* height: 220px; */
+        align-self: center;
+        justify-content: center;
+       
+    }
+
+    .right{
+        width:20px;
+        align-self: center;
+        justify-content:center;
+    }
+    .xian1,.xian2,.xian3,.xian4 {
+        width: 70px;
+    height: 1px;
+    background-color: red;
+    }
+
+    .xian1{
+        transform-origin: 0;
+        /* transform-origin: ; */
+        transform:rotate(60deg)
+    }
+    .xian2{
+    transform-origin: 0;
+    transform: rotate(-60deg);
+    }
+
+    .xian3{
+        margin-left: -35px;
+    transform-origin: right;
+    transform: rotate(-60deg);
+    }
+
+    .xian4{
+        margin-left: -35px;
+    transform: rotate(60deg);
+    transform-origin: right;
+    }
+
+ .middle{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+ }
+
+ .right-image{
+     width:100%;
+     height: 220px;
+ }
+ .right-image img{
+     width:100%;
+     height: 100%;
+ }
+.introduce{
+    justify-self: start;
+
+    display: grid;
+    grid-template-rows: 43px 124px auto;
+}
+
+.bottom{
+    width:72px;
+    height: 30px;
+    background-color: rgb(221, 0, 27);
+    color:white;
+    text-align: center;
+    padding:auto 0;
+}
+</style>
+<!-- 43 124 -->
+<body>
+    <div class="outside">
+        <div class="left">
+            <div class="xian1"></div>
+            <div class="xian2"></div>
+        </div>
+        <div class="middle">
+            <div class="right-image">
+                <img src="./Picture/2.3.png" alt="">
+            </div>
+            <div class="introduce">
+                <div class="introduce-title">
+                    <span class="introduce-title-1" style="font-weight: 700;">品牌简介</span> 
+                        <span class="introduce-title-2" style="color:red">/ 01</span>
+                </div>
+                <div class="introduce-content">
+                    <P style="    text-indent: 1rem;
+                    font-size: 13px;
+                    color: darkgrey;
+                    line-height: 22px;">品牌简介美容美容连锁机构创办于2006年
+                        。目前拥有五十六家直营连锁店，一家教育中心，
+                        员工180多名，大多为优秀的美容师、发型师、中高级
+                        管理人员，同时也为美容美发市场培养了大批美容美发人才。随着
+                        市场的变化，公式不断走向装野花，系统化，规模化，组建了市场、
+                        运营、教育、人力资源、财务、行政等相关部门、逐步形成了完善的运营体系
+                        ，形成集团化管理，已经拥有一支严谨高效、积极进取的学习型大团队。
+                        立足于美容美发
+                    </P>
+                </div>
+                <div class="bottom" style="display: table-cell;">
+
+                    <span style="line-height: 30px;"> 查看更多</span>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="xian3"></div>
+            <div class="xian4"></div>
+        </div>
+    </div>
+
+
+    <div>111111111111111</div>
+</body>
+</html>

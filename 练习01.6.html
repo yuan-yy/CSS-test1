@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .outside {
+        margin: 200px;
+        width: 400px;
+        height: 330px;
+
+        border-right: 0.001px solid black;
+        border-bottom: 0.001px solid black;
+        border-top: 0.001px solid white;
+        border-left: 0.001px solid white;
+        box-shadow: 0 2px 0 grey;
+    }
+
+    .outside .content {
+        width: 390px;
+        height: 300px;
+        margin-top: 15px;
+        margin-left: 5px;
+        background: no-repeat;
+        background-size: cover;
+        background-image: url("./Picture/6.jpg");
+
+    }
+
+    .outside .content .row_line {
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        margin-left: 43px;
+        top: 64px;
+    }
+
+    .outside .content .row_line div {
+        margin-bottom: 165px;
+        /* padding: 80px; */
+        width: 310px;
+        height: 1px;
+        border-top: white solid 1px;
+
+    }
+
+    .outside .content .column_line {
+
+        top: -308px;
+
+        position: relative;
+        left: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .outside .content .column_line div {
+        width: 1px;
+        height: 245px;
+        border-left: white solid 1px;
+        z-index: 120;
+
+
+    }
+
+
+    .outside .content .column_line .div1 {
+        margin-left: 57px;
+    }
+
+    .outside .content .column_line .div2 {
+        margin-left: 235px;
+    }
+
+    .outside .title {
+        top: -166px;
+        left: 150px;
+        font-size: 23px;
+        color: white;
+        font-weight: 500;
+        position: relative;
+
+    }
+</style>
+
+<body>
+    <div class="outside">
+        <div class="content">
+            <div class="row_line">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="column_line">
+                <div class="div1"></div>
+                <div class="div2"></div>
+            </div>
+        </div>
+
+
+        <div class="title">
+
+            <span>灵巧吹风机</span>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

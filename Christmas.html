@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        background: #eeeeee;
+        ;
+    }
+
+    .outside {
+
+        position: absolute;
+        height: 800px;
+        top: 0;
+        /* bottom: 0; */
+        left: 0;
+        right: 0;
+        /* background-color:red; */
+
+        /* border: 1px solid red; */
+
+    }
+
+    .outside .content-head{
+        position: absolute;
+        left: 50px;
+        right:50px;
+        background-color:rgba(122,122,122,0.5);
+    }
+
+    .outside .head-left {
+        float: left;
+        position: relative;
+        left: 50px;
+        /* margin-left: 20px; */
+    }
+
+    .head-left p {
+        font-family: 'Tangerine', serif;
+        font-size: 48px;
+    }
+
+    .outside .head-right {
+        float: right;
+        position: relative;
+        right: 50px;
+    }
+
+    .outside .head-right .sz .sz-body {
+        float: right;
+        height: 60px;
+        border-right: 2px solid black;
+        margin-right: 5px;
+
+        transition: height 1s 0.3s ease-in;
+
+    }
+
+    .outside .head-right .sz .sz-head {
+        /* float:right; */
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid black;
+        clear: right
+    }
+
+
+    .outside .head-right .sz:hover .sz-body {
+        height: 100px;
+    }
+
+
+    .outside .content-body {
+        /* background-color:rgba(147,147,147,0.4); */
+        position: absolute;
+        left: 50px;
+        right:50px;
+        top:100px;
+    }
+    .outside .content-body:before{
+        position: relative;
+        content: "";
+        display: block;
+        height: 40px;
+        background-color: black;
+    }
+    .outside .content-body .content-body-left{
+
+        float: left;
+        height: 260px;
+        border:1px solid black;
+        position: relative;
+        top:0;
+        width:345px;
+        text-align: center;
+       
+        /* background-color: black; */
+
+        
+        /* background: no-repeat; */
+        background-size:100% 100%;
+        background-image: url("Picture/下载.jfif");
+    }
+    .outside .content-body .content-body-left p{
+        color:#eeeeee;
+
+    }
+
+    .video{
+        position: absolute;
+        left:50px;
+        right:50px;
+        top:100px;
+        /* width:100%; */
+        height: 300px;
+        border: 1px solid red;
+    }
+    .video video{
+        width:100%;
+        height: 100%;
+       /* position: fixed; */
+       z-index:-19999;
+    }
+
+    .content-body-right{
+        float:right;
+        position: relative;
+        top:0;
+        width:345px;
+        height: 260px;
+        border:1px solid black;
+    }
+    .content-body-right img{
+        width:100%;
+        height: 100%;
+    }
+
+
+    .content{
+        position:absolute;
+        left:100px;
+        right:100px;
+        top:0;
+        height: 100%;
+    }
+</style>
+
+<body>
+
+    <div class="outside">
+        <div class="content" style="background-image:url('./Picture/1.jpg');">
+        <div class="content-head">
+            <div class="head-left" style="margin:12px 0">
+                <p>Christmas Happy</p>
+            </div>
+            <div class="head-right">
+
+                <div class="sz">
+                    <div class="sz-body"></div>
+                    <div class="sz-head"></div>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <video  autoplay="autoplay" loop="loop" muted="muted">
+
+                <source style="width:100%" src="Video/beij.mp4" type="video/mp4"></source>
+
+            </video>
+            
+
+        </div>
+        <div class="content-body">
+            <div class="content-body-left" style="opacity: 0.2;">
+                <img src="./Picture/下载.jfif">
+            </div>  
+            <div class="content-body-right" style="opacity: 0.2;">
+                <img src="Picture/sd.png">
+            </div>
+
+            <div style="clear: both;display: block; width: 100%;height: 40px;background-color: black;position: relative;top:-2px;"></div>
+            <div style="clear: both;text-align: center;    
+            font-family: fangsong;
+            font-size: x-large;
+            line-height: 40px;">
+                <div ><p>寒冬里的浪漫，如雪花飞舞。风声里的心语，</p></div>
+                <div><P>似藤蔓缠绵。烛光摇曳的圣诞，</P></div>
+                <div><p>银铃在耳畔轻响。爱人对视的目光中，</p></div>
+                <div><p>藏着对未来共同的期盼。</p></div>
+                <div><p>圣诞快乐！</p></div>
+            </div>  
+        </div>
+    </div>
+          
+    </div>
+    
+
+
+
+
+
+</body>
+<script src="jquery.min.js"></script>
+<script>
+
+
+
+
+    var a = 0;
+    $(".sz").mouseenter(function () {
+        if (a === 0) {
+            setTimeout(function name(params) {
+                $(".outside").css({
+                    "background-image": "url('')"
+                })
+                a = 1
+            }, 1000)
+
+        } else {
+            setTimeout(function name(params) {
+                $(".outside").css({
+                    "background": "#eee"
+                })
+                a = 0
+            }, 1000)
+        }
+
+    })
+
+// var flackColor = "#fff"; //雪片颜色
+// var newOne = 10;//间隔10毫秒
+// var flake = $( "<div></div>"). html( "❄"). css( "position", "absolute");
+// $( function(){
+// setInterval( function(){
+// var dWidth = $ ( document ). width (); //获取页面宽度
+// var dHeight = $( document). height();//获取页面高度
+// var startLeft = dWidth* Math. random();//雪片随机出现位置
+// var endLeft = dWidth* Math. random();//雪片随机结束位置
+// var flakeSize= 5+ 50* Math. random();//雪片大小
+// var durationTime= 4000+ 7000* Math. random();
+// var startOpacity= 0.7+ 0.3* Math. random();//出现时雪片透明度
+// var endOpacity= 0.4+ 0.3* Math. random();//消失时图片透明度
+// flake. clone(). appendTo( $( "body")). css({
+// "left" :startLeft,
+// "top" : "-55px",
+// "opacity" :startOpacity,
+// "font-size" :flakeSize,
+// "color" :flackColor,
+// }). animate({
+// "left" :endLeft,
+// "top" :dHeight,
+// "opacity" :endOpacity
+// }, durationTime, function(){
+// $( this). remove();
+// })
+// }, newOne);
+// })
+
+</script>
+
+</html>

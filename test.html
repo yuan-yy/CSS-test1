@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>transition/transform</title>
+</head>
+<style type="text/css">
+    #div1 {
+        float: left;
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        transition: width 1s 0.1s ease-in-out,height 1s 0.1s ease-in;;;
+    }
+    #div2 {
+        float: left;
+        height: 100px;
+        width: 100px;
+        background-color: green;
+    }
+    #div3 {
+        float: left;
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+    }
+    #div4 {
+        float: left;
+        height: 100px;
+        width: 100px;
+        background-color: #234F21;
+    }
+    #div5 {
+        float: left;
+        height: 100px;
+        width: 100px;
+        background-color: #af123c;
+    }
+    #div6 {
+        float: left;
+        height: 100px;
+        width: 100px;
+        background-color: #affa3c;
+    }
+    /* transition 实现多个属性 */
+    #div1:hover {
+        width:200px;
+        height: 200px;
+        transition: width 2s ease,height 2s ease;
+  
+    }
+    /* transform 旋转 rotate */
+    #div2:hover {
+        transform:rotate(35deg);
+
+
+    }
+    /* transform 缩放 scale */
+    #div3:hover {
+        transform:scale(0.8, 1.5);
+
+    }
+    /* transform 倾斜 skew */
+    #div4:hover {
+        transform:skew(35deg);
+  
+    }
+    /* transform 移动 translate */
+    #div5:hover {
+        transform:translate(45px, 45px);
+    }
+    /* transform 多个效果 */
+    #div6:hover {
+        transform:rotate(35deg) scale(0.8, 1.5) skew(35deg) translate(45px, 45px);
+    }
+</style>
+<body>
+    <div id="div1">transition</div>
+    <div id="div2">transform rotate</div>
+    <div id="div3">transform scale</div>
+    <div id="div4">transform skew</div>
+    <div id="div5">transform translate</div>
+    <div id="div6">transform</div>
+
+
+    
+</body>
+</html>

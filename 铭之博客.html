@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0
+    }
+
+    body{
+        background: no-repeat;
+        background-size: 100%;
+        background-image: url("Picture/9.png");
+      
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    body {
+        background-color: rgb(214, 224, 225);
+    }
+
+    .content {
+        margin: 0 auto;
+        width: 70%;
+        /* border: 1px solid black; */
+    }
+
+    .content .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .logo {
+        font-size: 26px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+        padding: 20px 0;
+        color: white;
+    }
+
+    .logo a {
+        color: white;
+    }
+
+    .link-ym {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 34px;
+    }
+
+    .link-ym div {
+        width: 150px;
+        line-height: 30px;
+        font-size: 15px;
+        /* background-color: rgb(65,105,255); */
+        /* color:white; */
+        text-align: center;
+        margin-right: 20px;
+        border-radius: 0 20px;
+
+    }
+
+    .link-ym div a {
+        color: rgb(65, 105, 255);
+    }
+
+    .link-ym div:hover {
+        background-color: rgb(65, 105, 255);
+    }
+
+    .link-ym div:hover a {
+        color: white;
+    }
+
+
+
+    .middle {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+
+        margin-top: 20px;
+
+    }
+
+    .middle .middle-left {
+        position: relative;
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .middle .middle-left .myself {
+        width: 100%;
+        height: 250px;
+        /* border: 1px solid black; */
+        background-color: rgb(234, 239, 239);
+    }
+
+    .middle .middle-right {
+        position: relative;
+        width: 65%;
+        /* border: 1px solid black; */
+    }
+
+    .middle-right-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .moddle-right-content-right {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+
+    .fabu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .about1 {
+
+        width: 100%;
+        color: #333;
+        background-color: white;
+        /* height: 20px; */
+        height: 32px;
+        font-size: 14px;
+        /* padding-left: 20px ; */
+    }
+
+    .about-me span {
+        padding-left: 20px;
+
+    }
+
+    .about1 span {
+        height: 100%;
+        line-height: 32px;
+        padding-left: 20px;
+        font-weight: 600;
+    }
+
+
+    .myself-mm {
+        font-size: 15px;
+        background-color: rgb(234, 239, 239);
+        color: #555;
+        line-height: 24px;
+        padding:10px;
+    }
+
+
+    .select {
+
+        margin-top: 20px;
+
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 40px;
+
+    }
+
+    .select .select-1 {
+        width: 70%;
+        height: 37px;
+        /* padding-left: 10px; */
+        /* height: 100%; */
+        border-bottom: 2px solid blue;
+        border-top: 1px solid blue;
+        border-left: 1px solid blue;
+    }
+
+    .select .select-1 input {
+        border: 0;
+        width: 100%;
+        height: 100%;
+        padding-left:10px;
+    }
+
+    .select .select-2 {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 30%;
+        height: 40px;
+        text-align: center;
+        /* height: 100%; */
+        background-color: rgb(65, 105, 225);
+        /* color: white; */
+    }
+
+    .select .select-2 a {
+        line-height: 40px;
+        color: white;
+        font-size: 14px;
+    }
+
+
+
+
+
+    .article-class {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+
+
+        /* border: 1px solid black; */
+
+        margin-top: 20px;
+    }
+
+    .article-class .article-class-1 {
+        width: 100%;
+        color: #333;
+        background-color: white;
+        /* height: 20px; */
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .article-class .article-class-1 span {
+        height: 100%;
+        line-height: 32px;
+        padding-left: 20px;
+        font-weight: 600;
+
+    }
+
+    .article-class .article-class-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: rgb(235, 240, 240);
+    }
+
+    .article-class .article-class-2 a {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        color: #555;
+        font-size: 15px;
+
+
+    }
+
+    .article-class .article-class-2 a:hover {
+        color: black;
+    }
+
+
+
+
+    .article-new {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 20px;
+        /* border: 1px solid black; */
+    }
+
+    .article-new .article-new-1 {
+        width: 100%;
+        color: #333;
+        background-color: white;
+        /* height: 20px; */
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .article-new .article-new-1 span {
+        height: 100%;
+        line-height: 32px;
+        padding-left: 20px;
+        font-weight: 600;
+
+    }
+
+    .article-2 {
+        background-color: rgb(235, 240, 240);
+    }
+
+    .article-2-content {
+        margin-top: 5px;
+
+    }
+
+    .article-2-content a {
+        margin-top: 15px;
+        padding-left: 20px;
+        color: #555;
+        font-size: 15px;
+    }
+
+    .article-2-content a:hover {
+        color: black;
+    }
+
+
+
+
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 20px;
+        /* border: 1px solid black; */
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+
+    .about-me .about-me-1 {
+        width: 100%;
+        color: #333;
+        background-color: white;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .about-me .about-me-1 span {
+        height: 100%;
+        line-height: 32px;
+        padding-left: 20px;
+        font-weight: 600;
+    }
+
+    .about-me .about-me-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(235,240,240);
+        /* align-items: center; */
+    }
+
+    .about-me-2-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+    }
+
+    .about-me-2-top-content {
+        margin-left: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .about-me-2-top-content-title span {
+        color: black;
+        font-size: 14px;
+    }
+
+    .about-me-2-top-content-address span {
+        color: #eee;
+        font-size: 6px;
+    }
+
+    .about-me-2-img {
+        margin: 13px;
+        border-radius: 13px 13px 13px 13px;
+        overflow: hidden;
+
+    }
+
+    .friend-link {
+        margin-top: 20px;
+        /* border: 1px solid black; */
+    }
+
+    .friend-link-1 {
+        width: 100%;
+        color: #333;
+        background-color: white;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .friend-link-1 span {
+        height: 100%;
+        line-height: 32px;
+        padding-left: 20px;
+        font-weight: 600;
+    }
+    .friend-link-2{
+        background-color: rgb(235, 240, 240);
+    } 
+
+    .friend-link-2 a {
+        margin-top: 15px;
+        padding-left: 20px;
+        color: #555;
+        font-size: 15px;
+    }
+
+    .friend-link-2 a:hover {
+        color: black;
+    }
+
+    .middle-right-1 {
+        background-color: rgb(240, 238, 242);
+        /* border: 1px solid black; */
+    }
+
+    .middle-right-content {
+        padding: 10px;
+    }
+
+
+    .moddle-right-content-right-title span {
+        font-size: 16px;
+        line-height: 25px;
+        text-shadow: #FFF 1px 1px 1px;
+    }
+
+    .moddle-right-content-right div {
+        margin-bottom: 25px;
+        margin: auto 0;
+        margin-top:-2px;
+    }
+
+    .middle-right-1:hover .title-11 {
+        color: rgb(65, 105, 255);
+        /* text-decoration: underline; */
+
+    }
+
+    .title-11:hover{
+        text-decoration: underline;
+    }
+    .title-11 {
+        color: black;
+        font-size: 16px;
+    }
+
+    .picture {
+        height: 100%;
+        width: 185px;
+    }
+    .middle-right-1{
+        margin-bottom: 20px;
+    }
+
+    .bottom{
+        text-align: center;
+
+    }
+    .bottom span{
+        color: #a5a4a4;
+        text-shadow: #fff 1px 0 2px, #fff 0 1px 2px, #fff -1px 0 2px, #fff 0 -1px 2px;
+    }
+   
+</style>
+
+
+<body>
+
+
+    <div class="content">
+        <div class="top">
+
+            <div class="logo">
+
+
+
+                <a href="" style="text-decoration: nonoe
+                
+                ;">铭之博客</a>
+            </div>
+            <div class="link-ym">
+                <div style=" background-color: rgb(65,105,255);"><a href="#" style="color: white;">网站首页</a></div>
+                <div><a href="#">php技术</a></div>
+                <div><a href="#">MYSQL技术</a></div>
+                <div><a href="#">WEB前端</a></div>
+                <div><a href="#">缓存技术</a></div>
+                <div><a href="#">LINUX技术</a></div>
+                <div><a href="#">在线工具</a></div>
+
+            </div>
+
+
+        </div>
+        <div class="middle">
+            <div class="middle-left">
+                <div class="myself">
+
+                    <div class="about1"><span>关于我</span></div>
+                    <div class="myself-mm">
+                        <img src="./Picture/boy.jpg" style="float: left;width:150px;height: 150px;margin-right: 9px;">
+                        <span><span
+                                style="font-weight: bold;">王浩铭</span>，一个90后草根站长（PHP程序猿）！16年入行。一直潜心研究PHP技术、WEB前端、MySQL技术、缓存技术和Linux技术，一边工作一边积累经验，分享一些个人学习心得和经验总结。</span>
+                    </div>
+                </div>
+                <div class="select">
+                    <div class="select-1"><input type="" name="" id="" placeholder="请输入关键字词"></div>
+                    <div class="select-2"><a>搜索</a></div>
+
+                </div>
+                <div class="article-class">
+
+                    <div class="article-class-1">
+                        <span>文章分类</span>
+                    </div>
+                    <div class="article-class-2">
+                        <a href="">PHP技术(72)</a>
+                        <a href="">MySQL技术(30)</a>
+                        <a href="">WEB前端</a>
+                        <a href="">缓存技术</a>
+                        <a href="">LINUX技术</a>
+                        <a href="">闲言碎语</a>
+                    </div>
+
+
+                </div>
+                <div class="article-new">
+
+                    <div class="article-new-1">
+                        <span>最新文章</span>
+                    </div>
+                    <div class="article-2">
+                        <div class="article-2-content">
+                            <a href="#">MySQL中， group by 和 order by ...</a>
+                        </div>
+                        <div class="article-2-content">
+                            <a href="#">Vue学习笔记（10） ——Vue组件中 ...</a>
+                        </div>
+                        <div class="article-2-content">
+                            <a href="#">Vue学习笔记（9） ——Vue组件创 ...</a>
+                        </div>
+                        <div class="article-2-content">
+                            <a href="#">Vue学习笔记（8） ——Vue实例的 ...</a>
+                        </div>
+                        <div class="article-2-content">
+                            <a href="#">Vue学习笔记（7） —— 过滤器 filte ...</a>
+                        </div>
+                        <div class="article-2-content">
+                            <a href="#">Vue学习笔记（6） ——v-if指令和v- ...</a>
+                        </div>
+                        <div class="article-2-content">
+                            <a href="#">Vue学习笔记（5） —— v-for指令 ...</a>
+                        </div>
+                        <div class="article-2-content">
+                            <a href="#">Vue学习笔记（5） —— Vue中样式 ...</a>
+                        </div>
+                        <div class="article-2-content">
+                            <a href="#">Vue学习笔记（4） —— v-model指 ...</a>
+                        </div>
+                        <div class="article-2-content" style="margin-bottom: 15px;">
+                            <a href="#">Vue学习笔记（3） —— Vue事件修饰 ...</a>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+                <div class="about-me">
+
+
+                    <div class="about-me-1">
+                        <span>关注我</span>
+                    </div>
+                    <div class="about-me-2">
+                        <div class="about-me-2-img">
+                            <img src="https://www.whmblog.cn/static/blog/images/wx.jpg" style="width:100%">
+
+                        </div>
+                        <!-- <div class="about-me-2-top">
+                            <div class="about-me-2-top-headimg">
+                                <img src="" style="width:60px;height: 60px;border:1px 1px 1px 1px">
+                                
+                            </div>
+                            <div class="about-me-2-top-content">
+                                <div class="about-me-2-top-content-title">
+                                    <span>等一分钟</span>
+                                </div>
+                                <div class="about-me-2-top-content-address">
+                                    <span>广东 深圳</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="about-me-2-middle">
+
+                            <img src="" style="width: 260px;height: 260px;">
+                        </div>
+                        <div class="about-me-2-bottom">
+                            <span>扫一扫上面的二维码图案，加我微信</span>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="friend-link">
+
+                    <div class="friend-link-1"><span>友情链接</span></div>
+                    <div class="friend-link-2">
+                        <a href="">杨青个人博客</a>
+                        <a href="">大海技术博客</a>
+                        <a href="">铭之GitHub</a>
+                        <a href="">华安自媒体博客</a>
+                        <a href="">线SEO优化</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="middle-right">
+
+                <div class="middle-right-1" >
+                    <div class="middle-right-content">
+                        <div class="moddle-right-content-right">
+                            <div class="moddle-right-content-right-title">
+                                <span>
+                                    <h3><a href="" class="title-11">tp5接入微信支付，tp5接入微信扫码支付,thinkphp5接入微信扫码支付</a></h3>
+                                </span>
+                            </div>
+                            <div class="moddle-right-content-right-fabu">
+                                <div><span style="font-size: 15px;
+                            color: #797b7c;">发布：2018-03-25 共3713人围观</span></div>
+                            </div>
+                            <p style="font-size: 15px;
+                    color: #797b7c;">微信支付是当前最流行的支付方式之一，本课程较详细的介绍了thinkphp5如何接入微信NATIVE扫码支付SDK</p>
+                        </div>
+                        <div class="picture" style="float: right;height: 160px;">
+
+                            <img src="./Picture/wechat.png" style="width:185px;height: 100%;">
+                        </div>
+                    </div>
+
+                </div>  
+                <div class="middle-right-1">
+                    <div class="middle-right-content">
+                        <div class="moddle-right-content-right">
+                            <div class="moddle-right-content-right-title">
+                                <span>
+                                    <h3><a href="" class="title-11" >tp5接入微信支付，tp5接入微信扫码支付,thinkphp5接入微信扫码支付</a></h3>
+                                </span>
+                            </div>
+                            <div class="moddle-right-content-right-fabu">
+                                <div><span style="font-size: 15px;
+                            color: #797b7c;">发布：2018-03-25 共3713人围观</span></div>
+                            </div>
+                            <p style="font-size: 15px;
+                    color: #797b7c;">微信支付是当前最流行的支付方式之一，本课程较详细的介绍了thinkphp5如何接入微信NATIVE扫码支付SDK</p>
+                        </div>
+                        <div class="picture" style="float: right;height: 160px;">
+
+                            <img src="" style="width:185px;height: 100%;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="middle-right-1">
+                    <div class="middle-right-content">
+                        <div class="moddle-right-content-right">
+                            <div class="moddle-right-content-right-title">
+                                <span>
+                                    <h3><a href="" class="title-11">tp5接入微信支付，tp5接入微信扫码支付,thinkphp5接入微信扫码支付</a></h3>
+                                </span>
+                            </div>
+                            <div class="moddle-right-content-right-fabu">
+                                <div><span style="font-size: 15px;
+                            color: #797b7c;">发布：2018-03-25 共3713人围观</span></div>
+                            </div>
+                            <p style="font-size: 15px;
+                    color: #797b7c;">微信支付是当前最流行的支付方式之一，本课程较详细的介绍了thinkphp5如何接入微信NATIVE扫码支付SDK</p>
+                        </div>
+                        <div class="picture" style="float: right;height: 160px;">
+
+                            <img src="" style="width:185px;height: 100%;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="middle-right-1">
+                    <div class="middle-right-content">
+                        <div class="moddle-right-content-right">
+                            <div class="moddle-right-content-right-title">
+                                <span>
+                                    <h3><a href="" class="title-11">tp5接入微信支付，tp5接入微信扫码支付,thinkphp5接入微信扫码支付</a></h3>
+                                </span>
+                            </div>
+                            <div class="moddle-right-content-right-fabu">
+                                <div><span style="font-size: 15px;
+                            color: #797b7c;">发布：2018-03-25 共3713人围观</span></div>
+                            </div>
+                            <p style="font-size: 15px;
+                    color: #797b7c;">微信支付是当前最流行的支付方式之一，本课程较详细的介绍了thinkphp5如何接入微信NATIVE扫码支付SDK</p>
+                        </div>
+                        <div class="picture" style="float: right;height: 160px;">
+
+                            <img src="" style="width:185px;height: 100%;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="middle-right-1">
+                    <div class="middle-right-content">
+                        <div class="moddle-right-content-right">
+                            <div class="moddle-right-content-right-title">
+                                <span>
+                                    <h3><a href="" class="title-11">tp5接入微信支付，tp5接入微信扫码支付,thinkphp5接入微信扫码支付</a></h3>
+                                </span>
+                            </div>
+                            <div class="moddle-right-content-right-fabu">
+                                <div><span style="font-size: 15px;
+                            color: #797b7c;">发布：2018-03-25 共3713人围观</span></div>
+                            </div>
+                            <p style="font-size: 15px;
+                    color: #797b7c;">微信支付是当前最流行的支付方式之一，本课程较详细的介绍了thinkphp5如何接入微信NATIVE扫码支付SDK</p>
+                        </div>
+                        <div class="picture" style="float: right;height: 160px;">
+
+                            <img src="" style="width:185px;height: 100%;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="middle-right-1">
+                    <div class="middle-right-content">
+                        <div class="moddle-right-content-right">
+                            <div class="moddle-right-content-right-title">
+                                <span>
+                                    <h3><a href="" class="title-11">tp5接入微信支付，tp5接入微信扫码支付,thinkphp5接入微信扫码支付</a></h3>
+                                </span>
+                            </div>
+                            <div class="moddle-right-content-right-fabu">
+                                <div><span style="font-size: 15px;
+                            color: #797b7c;">发布：2018-03-25 共3713人围观</span></div>
+                            </div>
+                            <p style="font-size: 15px;
+                    color: #797b7c;">微信支付是当前最流行的支付方式之一，本课程较详细的介绍了thinkphp5如何接入微信NATIVE扫码支付SDK</p>
+                        </div>
+                        <div class="picture" style="float: right;height: 160px;">
+
+                            <img src="" style="width:185px;height: 100%;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="middle-right-1">
+                    <div class="middle-right-content">
+                        <div class="moddle-right-content-right">
+                            <div class="moddle-right-content-right-title">
+                                <span>
+                                    <h3><a href="" class="title-11">tp5接入微信支付，tp5接入微信扫码支付,thinkphp5接入微信扫码支付</a></h3>
+                                </span>
+                            </div>
+                            <div class="moddle-right-content-right-fabu">
+                                <div><span style="font-size: 15px;
+                            color: #797b7c;">发布：2018-03-25 共3713人围观</span></div>
+                            </div>
+                            <p style="font-size: 15px;
+                    color: #797b7c;">微信支付是当前最流行的支付方式之一，本课程较详细的介绍了thinkphp5如何接入微信NATIVE扫码支付SDK</p>
+                        </div>
+                        <div class="picture" style="float: right;height: 160px;">
+
+                            <img src="" style="width:185px;height: 100%;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="middle-right-1">
+                    <div class="middle-right-content">
+                        <div class="moddle-right-content-right">
+                            <div class="moddle-right-content-right-title">
+                                <span>
+                                    <h3><a href="" class="title-11">tp5接入微信支付，tp5接入微信扫码支付,thinkphp5接入微信扫码支付</a></h3>
+                                </span>
+                            </div>
+                            <div class="moddle-right-content-right-fabu">
+                                <div><span style="font-size: 15px;
+                            color: #797b7c;">发布：2018-03-25    共3713人围观</span></div>
+                            </div>
+                            <p style="font-size: 15px;
+                    color: #797b7c;">微信支付是当前最流行的支付方式之一，本课程较详细的介绍了thinkphp5如何接入微信NATIVE扫码支付SDK</p>
+                        </div>
+                        <div class="picture" style="float: right;height: 160px;">
+
+                            <img src="" style="width:185px;height: 100%;">
+                        </div>
+                    </div>
+
+                </div>
+            
+               
+            </div>
+
+        </div>
+        <div class="bottom">
+
+            <span>Design by 王浩铭 粤ICP备17053701号-2 铭之GitHub sitemap</span>
+        </div>
+    </div>
+</body>
+
+</html>

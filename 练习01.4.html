@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    div {
+        margin: 0;
+        padding: 0;
+    }
+
+    .outside {
+        height: 580px;
+        width: 430px;
+        z-index: 3;
+        border-right: 0.01px solid #D4D4D4;
+        border-bottom: 0.01px solid #D4D4D4;
+        border-top:0.01px solid white;
+        border-left: 0.01px solid white;
+    }
+
+    .outside .content {
+        width: 390px;
+        height: 500px;
+        margin-left: 20px;
+        margin-top: 40px;
+        background: white;
+        z-index: 100;
+        border-right: 0.01px solid #D1D1D1;
+        border-bottom: 0.01px solid #D1D1D1;
+        /* box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, .05); */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .outside .content .head {
+        width: 100%;
+        height: 30%;
+    }
+
+    .outside .content .head .head_img {
+        width: 100%;
+        height: 157px;
+        z-index: 101;
+    }
+
+    .outside .content .head .head_img img {
+        width: 100%;
+        height: 100%;
+        z-index: 110;
+    }
+    .outside .content .head .head_img .head_month{
+        position: relative;
+        width: 80px;
+        height: 80px;
+        background-color: black;
+        top: -85px;
+        color: white;
+        left: 310px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .outside .content .head .head_img .head_month .head_moth_day{
+        font-style: italic;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+
+    .outside .content .title{
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .outside .content .title p{
+
+        margin-top: 15px;
+
+    }
+
+    .outside .content .jiaMeng{
+       display: flex;
+       flex-direction: row;
+       justify-content: flex-start;
+       color: rgb(196,196, 196);
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    /* .outside .content .jiaMeng .jiameng-1{
+       
+    } */
+
+    .outside .content .jiaMeng .jiaMeng_2{
+        margin-left: 10px;
+    }
+    .outside .content .jiaMeng .jiaMeng_3{
+        margin-left: 10px;
+    }
+
+    .outside .content .discribe{
+
+        color: #d9d9dd;
+        margin-top: 35px;
+        width: 310px;
+        padding-left: 20px;
+    }
+
+</style>
+
+<body>
+    <div class="outside">
+        <div class="content">
+            <div class="head">
+                <div class="head_img">
+                    <img src="./Picture/4.png">
+                    <div class="head_month">
+                        <p class="head_moth_day">24</p>
+                        <p>Jun</p>
+                    </div>
+                    </img>
+                </div>
+
+            </div>
+
+            <div class="title">
+                <p>如何选择适合自己的发型</p>
+            </div>
+            <div class="jiaMeng">
+                <div class="jiaMeng_1">美发店加盟</div>
+                <div class="jiaMeng_2">|</div>
+                <div class="jiaMeng_3">眼睛 2 </div>
+            </div>
+
+            <div class="discribe">
+                发型由于其可变性又可以修饰脸型，不同发型展示您不同风格
+                的没。发型与脸型搭配设计，是决定美的重要因素之一。甜美
+                的中长直发发型，精致的小圆脸搭配上优雅的偏分设计。发尾蓬松
+                的微卷凸显出性感的锁骨来，优雅十足。对于小个子女生来说
+                清爽的短发是...
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+
+</html>

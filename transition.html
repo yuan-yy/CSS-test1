@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{margin: 0;
+    padding:0}
+    .outside{
+        width: 80px;
+        height: 90px;
+        background-color: blue;
+        transition-property:width;
+        transition-duration: 10s;
+        transition-delay: 1s;
+        /* transition-timing-function: ease-out; */
+        transition-timing-function: ease-in;
+
+
+    }
+    .outside:hover{
+        width: 200px;
+    
+    }
+
+
+    ul{
+        list-style: none;
+        background-color: #eee;
+        width:600px;
+        height: 40px;
+        
+    }
+    
+    ul li{
+        
+        float: left;
+        position: relative;
+        
+    }
+    a{
+        text-decoration: none;
+        display: block;
+        width:100px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+    span{
+        /* width: 100%; */
+        position:absolute;
+        width:100px;
+        height: 4px;
+        bottom:0;
+        background-color: red;
+        transition: height  0.6s 0.5s ease-in;
+        
+    }
+    li:hover span{
+        height: 40px;
+        /* z-index: 2; */
+    }
+</style>
+<body>
+    <div class="outside"></div>
+
+    <div class="ganqin">
+
+        <ul>
+            <li><a href="">F</a><span></span></li>
+            <li><a href="">G</a><span></span></li>
+            <li><a href="">H</a><span></span></li>
+            <li><a href="">J</a><span></span></li>
+            <li><a href="">K</a><span></span></li>
+        </ul>
+    </div>
+</body>
+</html>

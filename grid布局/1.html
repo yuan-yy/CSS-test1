@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .outside{
+        display:grid;
+        grid-template-columns: 100px 800px;
+        grid-template-rows: 50px 500px 50px;
+        grid-gap:5px;
+    }
+
+    
+    .head{
+        background-color: blue;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        /* justify-content: start; */
+      
+    }
+    .menu{
+        background-color: darkcyan;
+ 
+    }
+    .content{
+        background-color: darkgreen;
+    }
+    .foot{
+        background-color: darkkhaki;
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+</style>
+<body>
+    <div class="outside">
+        <div class="head"></div>
+        <div class="menu"></div>
+        <div class="content"></div>
+        <div class="foot"></div>
+    </div>
+</body>
+</html>

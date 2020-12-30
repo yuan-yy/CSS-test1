@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<style>
+
+
+
+    *{
+        margin:0;
+        padding:0;
+    }
+    .outside{
+        margin: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+
+
+        width:1180px;
+        height: 350px;
+        box-shadow: 0 15px 15px -15px #000,
+        0 -15px 15px -15px #000000;
+    }
+
+    .outside .content_left {    
+
+
+        position: relative;
+
+
+        width:50%;
+        height: 100%;
+    }
+
+
+    .outside .content_left .discount{
+        position:absolute;
+        top:20px;
+        left:20px;
+
+        border-radius: 50%;
+        width:50px;
+        height: 50px;
+        background-color: rgb(239,100,150);
+        text-align: center;
+        margin: 0 auto;
+        
+
+    }
+    .outside .content_left .discount span{
+        /* align-items: center; */
+        position: relative;
+        top: 15px;
+        color:white;
+    }
+
+    .outside .content_left img{
+        width:100%;
+        height: 100%;
+    }
+
+    .outside .content_right{
+        /* margin:20px 50px 10px 50px; */
+        /* padding:20px 50px auto 50px;  */
+        /*  这里有问题 */
+        padding-top:20px;
+        padding-left:50px;
+        padding-right:50px;
+        width:590px;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+
+    .outside .content_right .datetime{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .outside .content_right .datetime div{
+        width: 39px;
+        background-color: rgb(199,28,96);
+        color: white;
+        margin-right: 3px;
+        font-size: 2px;
+        border-radius: 19%;
+    }
+
+    .outside .content_right .introduce{
+
+        font-weight: 500;
+        font-size: 13px;
+        margin-top:30px;
+        color:rgb(160,160,160);
+        line-height: 1.3em;
+    }
+
+
+    .outside .content_right .abbreviation{
+
+        margin-top: 45px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .outside .content_right .abbreviation span{
+        color:rgb(238,164,53);
+        font-size: 3px;
+        font-weight: 600;
+       
+    }
+    .outside .content_right .abbreviation span+span{
+        margin-left: 5px;
+        color:black;
+    }
+
+    .outside .content_right  .bottom{
+
+        margin-top:55px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .outside .content_right .bottom div span{
+        color:rgb(160,160,160);
+        font-size: 2px;
+
+    }
+
+
+    .outside .content_right  .bottom div+div{
+        background-color: rgb(250,55,120);
+
+        width: 80px;
+        text-align: center;
+        border-radius: 13%;
+        color:white;
+
+    }
+    .outside .content_right .bottom button{
+        border: white;
+        background-color: rgb(250,55,120);
+        color: white;
+    }
+</style>
+<body>
+    
+    <div class="outside">
+        <div class="content_left">
+            <img src="Picture/8.png">
+            <div class="discount">
+                <span>5.5折</span>
+            </div>
+        </div>
+        <div class="content_right">
+            <div class="datetime">
+                <div>剩余：</div>
+                <div>1小时</div>
+                <div>22分钟</div>
+                <div style="width: 28px;">36秒</div>
+            </div>
+            <div class="introduce">
+                <span>透过独家高端技术，将24k精纯金箔精炼成超威细的反光粒子，并注入妆前底霜内，
+                带来持久保湿功效，绽放金光亮采，成就年轻光感肌。
+            </span>
+            </div>    
+            <div class="abbreviation">
+                <span>
+                    香港特快直送，零扣关 包税
+                </span>
+                <span>
+                    净透舒缓洁面仪(1套 PINK)
+                </span>
+            </div>
+            <div class="bottom">
+                <div>
+                    <span>已售499</span>
+                </div>
+                <div style="background-color: red;">
+                    <button>马上抢</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

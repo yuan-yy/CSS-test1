@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0
+    }
+    a{
+        text-decoration: none;
+    }
+
+    .outside {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .outside .content {
+        width: 90%;
+        height: 80%;
+        /* margin:20px auto; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .outside .content .content-left {
+        width: 45%;
+        height: 100%;
+        border: 1px solid black;
+    }
+
+    .outside .content .content-left .link-content{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* align-items: center; */
+    }
+
+    .outside .content .content-right {
+        width: 45%;
+        height: 100%;
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <div class="outside">
+        <div class="content">
+            <div class="content-left">
+
+                <div class="link-content">
+                <div><a href="">
+                        我的博客
+                    </a></div>
+                <div><a href="">
+                        工具
+                    </a></div>
+                <div><a href="">
+                        github
+                    </a></div>
+                <div><a href="">
+                        bilibili
+                    </a></div>
+                <div><a href="">
+                        关于
+                    </a></div>
+
+                </div>
+            </div>
+            <div class="content-right"></div>
+        </div>
+    </div>
+</body>
+
+
+
+<input type="button" onclick="console.log(value1)">
+<script src="jquery.min.js"></script>
+<script>
+
+    var value1 = "我是h"
+</script>
+
+</html>

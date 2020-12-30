@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        display: inline-block;
+    }
+
+    .outside {
+
+
+
+        display: grid;
+        grid-template-columns: 375px;
+        grid-template-rows: 72px 275px 100px auto;
+
+        width: 375px;
+        height: 505px;
+        border: 1px solid rgb(251, 75, 134)
+    }
+
+
+    .head {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .new1 {
+        width: 50px;
+        height: 45px;
+        background-color: rgb(128, 181, 63);
+        color: white;
+        font-weight: 700;
+        font-size: 17px;
+        text-align: center;
+
+
+    }
+
+    .new2 {
+        justify-self: flex-end;
+        padding-top: 12px;
+        padding-right: 10px;
+    }
+
+    .new2 span {
+        /* color:#eee; */
+        font-weight: 600;
+        color: darkgray;
+        font-weight: 600;
+
+
+
+
+    }
+
+    .bottom1 {
+        padding: 0 20px;
+        align-self: center;
+    }
+
+
+    .bottom1 p span {
+        color: darkgray;
+        font-weight: 500;
+    }
+
+    .bottom2 {
+        /* align-self: center; */
+        padding:0 20px ;
+        position: relative;
+    }
+    .bt1{
+        display: inline-block;
+    color: rgb(252,63,131);
+    font-size: 20px;
+    font-weight: 700;
+    }
+
+    .bt2{
+        position: absolute;
+    top: 10px;
+    margin-left: 11px;
+    color: darkgray;
+    }
+    .bt3{
+        position: absolute;
+    width: 80px;
+    border-top: 1.5px solid darkgray;
+    left: 147px;
+    top: 21px;
+    }
+</style>
+
+<body>
+    <div class="outside">
+        <div class="head">
+            <div style="    padding-top: 10px;
+        padding-left: 10px;">
+
+                <div class="new1">新品上市</div>
+            </div>
+            <div class="new2"><span>品牌介绍</span></div>
+        </div>
+        <div class="body">
+            <img src="./Picture/2.2.png" alt="">
+        </div>
+        <div class="bottom1">
+
+            <P>
+                <b>(小棕瓶) 第六代</b> <span>PAPA RECIPE 面膜系列 春雨蜂蜜面膜 10 片 </span>
+            </P>
+
+        </div>
+        <div class="bottom2">
+            <div class="bt1"  style="display: inline-block;">
+                <span>
+                    ￥ 198.00元
+                </span>
+            </div>
+            <div class="bt2" style="display: inline-block;">
+                <span>
+                    ￥321.00元
+                </span>
+            </div>
+            <div class="bt3">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

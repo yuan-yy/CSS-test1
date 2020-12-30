@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .outside {
+        width: 1140px;
+        height: 580px;
+    }
+
+    .outside .content-left {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 560px;
+        height: 100%;
+        float: left;
+        /* border: 1px solid red; */
+        background: no-repeat;
+        /* overflow: hidden; */
+        background-image: url("Picture/10.1.png");
+        background-size: 100%;
+
+    }
+
+    .outside .content-left .left-info {
+        height: 110px;
+        padding: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #eee;
+        opacity: 0.5;
+
+    }
+
+    /* .outside .content-left img{
+        width: 100%;
+        height: 100%;
+    } */
+
+    .outside .content-right {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 560px;
+        height: 100%;
+        float: right;
+        /* border: 1px solid green; */
+    }
+
+    .outside .content-right .right-top {
+        width: 100%;
+        height: 280px;
+        /* border: 1px solid grey; */
+        margin-top: 0;
+
+
+        background: no-repeat;
+        background-image: url("Picture/10.2.png");
+        background-size: 100%;
+
+
+        position: relative;
+        top: 0;
+        left: 0;
+
+
+    }
+
+
+    .outside .content-right .right-top .right-top-1 div{
+        margin-top: 20px;
+    margin-left: 20px;
+    }
+    .outside .content-right .right-bottom .right-bottom-1 div{
+        margin-top: 20px;
+    margin-left: 20px;
+    }
+
+    .outside .content-right .right-top .right-top-1,
+    .right-bottom-1 {
+        
+        float: right;
+        width: 50%;
+        height: 100%;
+        background-color: rgba(127, 127, 127, 0.6);
+
+    }
+
+    .outside .content-right .right-bottom {
+        width: 100%;
+        height: 280px;
+        /* border: 1px solid grey; */
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+
+        background: no-repeat;
+        background-image: url("Picture/10.3.png");
+        background-size: 100%;
+
+
+    }
+</style>
+
+<body>
+    <div class="outside">
+        <div class="content-left">
+            <!-- <img src="Picture/10.1.png" alt=""> -->
+
+            <div class="left-info">
+                <div class="title">
+
+                    <span style="    font-weight: bolder;
+                    font-size: 23px;">2017秋冬新品</span>
+                </div>
+                <div class="info">
+                    <p style="margin-top: 15px;
+                    font-size: 14px;">绅士，或日式神，旧指地方上有势力的地主或退职官僚。
+                        中西交往之后，改词被作为英语gentleman的意...
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="content-right">
+
+            <div class="right-top">
+                <div class="right-top-1">
+                    <div class="title">
+                        <span style="    font-weight: bolder;
+                        font-size: 23px;">女装新品区</span>
+                    </div>
+                    <div class="info">
+                        <p style="margin-top: 15px;
+                        font-size: 14px;">从日常休闲装到利落办公室装，应有尽有多款服装
+                            和时尚必备单品，应有尽有，立即选购。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-bottom">
+                <div class="right-bottom-1">
+                    <div class="title">
+                        <span style="    font-weight: bolder;
+                        font-size: 23px;">男装新品区</span>
+                    </div>
+                    <div class="info">
+                        <p style="margin-top: 15px;
+                        font-size: 14px;">超4000件新款针织衫加入低至3折......
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

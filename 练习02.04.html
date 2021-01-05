@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input {
+        border: 0;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .outside {
+        width: 799px;
+        height: 616px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+    }
+
+    .left {
+        height: 100%;
+        width: 467px;
+    }
+
+    .right {
+        height: 100%;
+        width: 333px;
+    }
+
+    .left img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .title {
+        margin-top: 104px;
+        height: 27px;
+        width: 100%;
+        font-size: 25px;
+        margin-left: 20px;
+    }
+
+    .content {
+        margin-top: 26px;
+        margin-left: 20px;
+    }
+
+    .sex {
+        position: relative;
+        margin-top: 26px;
+        margin-bottom: 26px;
+        margin-left: 20px;
+
+    }
+
+    .boy {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .box1 {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #c1b497;
+    }
+
+    
+    .box1 .box2 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: white;
+    }
+
+    .box1 .box2 .box3 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        background-color: #c1b497;
+    }
+
+    .box1-1 {
+        position: absolute;
+        left: 65px;
+        width: 18px;
+        height: 18px;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+
+    }
+
+    .input1,
+    .input2 {
+        width: 296px;
+        height: 36px;
+
+        text-indent: 1em;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border: 0.1px solid #eee;
+    }
+
+    .alltext {
+        margin-top: 30px;
+    }
+
+    .alltext div {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .YZM {
+        width: 100%;
+        height: 36px;
+        text-align: center;
+    }
+
+    .YZM .YZM1 {
+        margin: auto;
+        width: 296px;
+        height: 36px;
+        border: 0.1px solid #eee;
+        /* text-indent: 1em; */
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+
+
+    .tijiao,
+    .notx {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .tijiao div {
+        margin: auto;
+        width: 296px;
+        height: 36px;
+        background-color: #c1b497;
+        color: white;
+        text-align: center;
+    }
+
+    .tijiao div span,
+    .notx div span {
+        line-height: 36px;
+
+    }
+
+    .notx div {
+        margin: auto;
+        width: 296px;
+        height: 36px;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="outside">
+        <div class="left">
+            <img src="./Picture/2.4.png" alt="">
+        </div>
+        <div class="right">
+
+            <div class="title">
+                <span>订阅我们</span>
+            </div>
+            <div class="content">
+                <p>立即赠送9折优惠卷，仅限一次使用。性别</p>
+            </div>
+            <div class="sex">
+
+                <div class="box1" id="first" style="display: inline-block">
+                    <div class="box2">
+                        <div class="box3">
+                        </div>
+                    </div>
+                </div>
+
+                <div style="position: absolute;;left:25px">男士</div>
+                <div class="box1-1" id="second" >
+                    <div class="box2">
+                        <div class="box3">
+                        </div>
+                    </div>
+
+                </div>
+                <div style="position: absolute;;left:90px">女士</div>
+            </div>
+
+
+            <div>
+                <div class="boy"></div>
+                <div class="girl"></div>
+            </div>
+            <div class="alltext">
+                <div class="text">
+                    <input type="text" value="称呼" class="input1">
+
+                </div>
+                <div class="text">
+                    <input type="text" value="邮箱" class="input1">
+
+                </div>
+
+            </div>
+            <div class="YZM">
+                <div class="YZM1">
+                    <div style="    width: 185px;
+                    height: 100%;
+                    float: left;
+                    border-top-right-radius: 6px;
+                    border-top-left-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                    border-bottom-left-radius: 6px;
+                    border: 0.1px solid #eee;">
+                        <input type="text" value="验证码" style="width: 100%;
+                        text-indent: 1em;
+                        height: 100%;">
+                    </div>
+                    <div style="height: 100%;
+                    position: relative;
+                    width: 108px;
+                    float: left;
+                    background-color: #f3f7f9;">
+                        <img src="./Picture/yzm.png" alt="图片" style="position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        width: 95px;
+                        height: 25px;;">
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <div class="tijiao">
+                <div>
+                    <span>提交信息</span>
+                </div>
+            </div>
+            <div class="notx">
+                <div>
+                    <span>今日不提醒</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

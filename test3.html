@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1{
+        position: relative;
+        width:200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #c1b497;
+    }
+    .box1 .box2{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom:0;
+        margin:auto;
+        width:60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: white;
+    }
+    .box1 .box2 .box3{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom:0;
+        margin:auto;
+        width:20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #c1b497;
+    }
+    .box5{
+        position: relative;
+        width:200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 0.1px solid;
+       
+    }
+
+ 
+</style>
+
+<body>
+
+
+    <div id="first" class="box1">
+        <div class="box2">
+            <div class="box3">
+            </div>
+        </div>
+    </div>
+
+    <div id="second" class="box5">
+        <div class="box2">
+            <div class="box3">
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script type="text/javascript" src="./jquery.min.js"></script>
+<script>
+    $("#first").click(function(){
+        $(this).removeClass("box5")
+        $(this).addClass("box1")
+        $("#second").addClass("box5")
+        $("#second").removeClass("box1")
+    })
+    $("#second").click(function(){
+      
+        $(this).removeClass("box5")
+        $(this).addClass("box1")
+        $("#first").addClass("box5")
+        $("#first").removeClass("box1")
+ 
+    })
+</script>
+<script>
+
+ 
+</script>
+</html>

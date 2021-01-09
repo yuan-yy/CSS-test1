@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .box1{
+        width: 100px;
+        height: 100px;
+        background-color: darkgoldenrod;
+        /* transform: translate(100px); */
+        /* transform:rotate(45deg) */
+
+        /* transform:scale(1.5,0.5) */
+        /* transform: skew(0deg,0deg); */
+        transform:rotateY(90deg) translatez(10deg)
+   }
+
+    .box2 {
+        /* width: 100px;
+        height: 100px;
+        margin: 100px auto;
+        background-color: darkgoldenrod; */
+        /* margin-top: 20px; */
+        /* transform: skew(20deg,20deg); */
+        /* transition-property: width; */
+        /* transition-property: all;
+        transition-delay: .4s ;
+        transition-duration: 1s;
+        transition-timing-function:cubic-bezier(.19,-0.97,.82,1.86); */
+        animation-name: mymove;
+        animation-duration:5s;
+        animation-timing-function: ease-in;
+        animation-delay: .9s;
+        animation-direction:reverse;
+        
+
+    }
+    /* .box2:hover{
+        width:300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: blue;
+        transform: rotate(180deg);
+    } */
+    @keyframes mymove {
+        0%{
+            width:100px
+        }
+        20%{
+            width:200px;
+        }
+        50%{
+            width: 300px;
+        }
+        70%{
+            width: 200px;
+        }
+        100%{
+            width:100px;
+        }
+        
+    }
+
+
+</style>
+<body>
+        <div class="box1"></div>
+</body>
+
+</html>

@@ -7,6 +7,7 @@
 </head>
 
 <style>
+  
     p{
         margin:0;
         padding:0;
@@ -14,8 +15,15 @@
     .outside{
         height:550px;
         width:500px;
-        border:1px solid grey;
-        box-shadow:0 0 10px #000
+        /* border:1px solid grey; */
+        box-shadow:0 0 1px #000;
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom:0;
+        margin:auto;
+
     }
 
     .outside .head_img{
@@ -29,7 +37,7 @@
     }
 
     .outside .content{
-        margin-top: 37px;
+        margin-top: 47px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -54,7 +62,7 @@
     }
     .outside .content .introduce .nickname{
         margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 15px;
         color:rgb(185,185,185)
 
@@ -70,6 +78,9 @@
     .outside .content .introduce .link a{
         text-decoration: none;
         color:rgb(90,198,183);
+    }
+    .date :nth-of-type(1){
+        margin-left: -8px;
     }
 </style>
 <body>
@@ -96,7 +107,7 @@
 
                 </div>
                 <div class="link">
-                    <a href="">Read More ></a>
+                    <a href=""><b>Read More ></b></a>
                 </div>
             </div>
         </div>

@@ -8,7 +8,12 @@
 <style>
     *{margin: 0;padding:0}
     .outside{
-    position: relative;
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    margin: auto;
     width: 575px;
     height: 470px;
     display: flex;
@@ -59,7 +64,10 @@
         width: 74px;
     height: 74px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2.5px solid white;
+
+    background-image:url("./Picture/moon.png");
+    background-size: 100%;
 }
     
 .name{
@@ -99,7 +107,7 @@
         </div>
         <div class="bottom" style="       display: flex;
         flex-direction: row;
-        margin-left: -218px;
+        margin-left: -225px;
         margin-top: -10px;
         align-items: center;
     ">
@@ -109,9 +117,13 @@
                     <div sytle="        width: 74px;
                     height: 74px;
                     border-radius: 50%;
-                    border: 2px solid white;">
-
+                    border: 2px solid white; position:relative;
+                    z-index:20
+                    ">
+                    
                     </div>
+
+
             </div>
             <div class="name" style="margin-left: 20px;margin-left: 20px;
             margin-top: -45px;    color: white;

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>机器人</title>
+</head>
+
+<style>
+
+    .outside{
+        width:1310px;
+        height: 324px;
+        border:1px solid #eeeeee;
+
+
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+
+        display: grid;
+        grid-template-rows: 23px 115px auto 115px 23px;
+        grid-template-columns: 26px 620px auto 620px 22px;
+        grid-template-areas: 
+        ". . . . ."
+        ". A . b ."
+        ". . . . ."
+        ". c . d ."
+        ". . . . ."
+        ;
+    }
+    .left-top{
+        grid-area: A;
+        /* background-color: brown; */
+
+        display: flex;
+        flex-direction: row;
+
+
+        position: relative;
+    }
+    .left-bottom{
+        grid-area: c;
+
+        display: flex;
+        flex-direction: row;
+
+
+        position: relative;
+        
+    }
+    .right-top{
+        grid-area: b;
+        display: flex;
+        flex-direction: row;
+
+
+        position: relative;
+    }
+    .right-bottom{
+        grid-area: d;
+        /* background-color: blue; */
+          display: flex;
+        flex-direction: row;
+
+
+        position: relative;
+    }
+    .yy{
+
+        height: 100%;
+        width: 50px;
+        background-color: #f0f0f0;   
+    }
+    .left-top-2{
+        margin-left:50px;
+        margin-top:12px;
+        width: 480px;
+    }
+    .left-top-2 :nth-child(1) span{
+        /* margin-bottom: 17px; */
+        font-size: 19px;
+        color:#666666;
+    }
+    .left-top-2 :nth-child(2){
+        margin-top: 16px;
+        font-size: 14px;
+        color: #666666;
+    }
+    .picture{
+     
+        position: absolute;
+    left: 20px;
+    top: 33px;
+    }
+</style>
+<body>
+    <div class="outside">
+        <!-- <div class="left">
+            <div class="left-top">第一个</div>
+            <div class="left-bottom"></div>
+        </div>
+
+
+
+
+        <div class="right">
+            <div class="right-top"></div>
+            <div class="right-bottom"></div>
+        </div> -->
+        <div class="left-top">
+            <div class="yy">
+
+
+            </div>
+            <div class="left-top-2">
+                <div><span>数控机器人+机器人</span></div>
+                <div><span>通用型工业机器人加上数控机床，提高产品质量与合格率的重要设备。</span></div>
+
+            </div>
+            <div class="picture"><img src="./Picture/left-1.png"></div>
+        </div>
+        <div class="left-bottom">
+            <div class="yy">
+            </div>
+            <div class="left-top-2">
+                <div><span>智能物流仓储系统</span></div>
+                <div><span>实现在计算机系统控制下完成单元货物的自动存取作业，有不可比拟的优势。。</span></div>
+
+            </div>
+            <div class="picture"><img src="./Picture/left-2.png"></div>
+        </div>
+
+
+
+        <div class="right-top">
+
+            <div class="yy">
+            </div>
+            <div class="left-top-2">
+                <div><span>伺服机械手系统</span></div>
+                <div><span>采用轮毂铸铝材料，保障设备的高强度刚性给安全生产提供最大保障。。</span></div>
+
+            </div>
+            <div class="picture"><img src="./Picture/right-1.png"></div>
+
+        </div>
+        <div class="right-bottom">
+
+            <div class="yy">
+            </div>
+            <div class="left-top-2">
+                <div><span>工业自动化系统</span></div>
+                <div><span>采用汇川可编程逻辑控制器进行集中控制，自动化程度高、精度高、性能可靠。</span></div>
+
+            </div>
+            <div class="picture"><img src="./Picture/right-2.png"></div>
+        </div>
+    </div>
+
+
+           
+</body>
+</html>

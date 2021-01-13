@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类精灵图</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .outside {
+        width: 802px;
+        height: 254px;
+        border: 0.01px solid #eeeeee;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+
+    .btn1,
+    .btn2,
+    .btn3,
+    .btn4,
+    .btn5 {
+        height: 60px;
+        width: 72px;
+        border: 0.01px solid #ff6600;
+        text-align: center;
+        line-height: 60px;
+        position: relative;
+        background-color: #ff6600;
+        border-radius: 23%;
+
+
+    }
+
+    .btn1 a,
+    .btn2 a,
+    .btn3 a,
+    .btn4 a,
+    .btn5 a {
+        color: white;
+    }
+
+    .btn1:hover::before {
+        content: "";
+        display: block;
+        position: absolute;
+        border: 5px solid #f60;
+        border-color: transparent transparent #f60 transparent;
+        top: -10px;
+        left: 32.5px;
+    }
+
+    .btn2 {
+        width: 113px;
+    }
+
+    .btn3 {
+        width: 117px;
+    }
+
+    .btn4 {
+        border-radius: 10%;
+    }
+
+    .btn2:hover::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border: 5px solid #f60;
+        border-color: #f60 transparent transparent transparent;
+        bottom: -10px;
+        left: 51.5px;
+    }
+
+
+
+    .btn3:hover::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border: 5px solid #f60;
+        border-color: transparent #f60 transparent transparent;
+        bottom: 25px;
+        left: -10px;
+    }
+
+
+
+
+    .btn4:hover .backgoround {
+        position: absolute;
+        width: 173px;
+        height: 211px;
+        background-color: #666666;
+        z-index: -10;
+        top: -91px;
+        left: -53px;
+    }
+
+    .btn4:hover::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border: 5px solid #f60;
+        border-color: transparent transparent #f60 transparent;
+        top: -10px;
+        left: 32.5px;
+    }
+
+    .btn4:hover a {
+        text-decoration: underline
+    }
+
+
+    .btn5:hover a {
+        text-decoration: underline;
+        color: #551a8b
+    }
+</style>
+
+<body>
+    <div class="outside">
+
+        <div class="btn1">
+
+            <a href="">按钮</a>
+        </div>
+        <div class="btn2">
+
+            <a href="">按钮Down</a>
+        </div>
+        <div class="btn3">
+
+            <a href="">按钮Down</a>
+        </div>
+        <div class="btn4">
+
+            <div class="backgoround"></div>
+
+            <a href="">链接</a>
+        </div>
+        <div class="btn5">
+
+
+            <a href="">链接</a>
+        </div>
+
+    </div>
+</body>
+
+</html>

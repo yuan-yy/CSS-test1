@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    *{
+        margin: 0;padding:0;
+        border:0;
+
+
+        
+    }
+
+
+
+
+    .outside{
+        width: 1458px;
+        height: 298px;
+        border: 0.01px solid #eeeeee;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin:0 auto;
+        
+       
+    }
+    
+    .top{
+        width: 319px;
+        height: 45px;
+        border:0.01px solid #2a333c;
+        line-height: 45px;
+        text-align: center;
+
+
+        margin-bottom: 50px;
+    }
+
+    .top span:nth-of-type(1){
+        font-size: 20px;
+        font-weight: 600;
+        color: #000000;
+
+    }
+    .top span:nth-of-type(2){
+        font-size: 20px;
+        /* font-weight: 500; */
+        color:#9d9d9d;
+        
+    }
+    .middle{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        width: 1318px;
+        height: 112px;
+        
+        border:0.01px solid #eeeeee;
+    }
+
+    .middle-left{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        width:50%;
+        height: 100%;
+
+        border:0.01px solid #eeeeee;
+    }
+
+
+    .middle-right{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        width:50%;
+        height: 100%;
+
+        border:0.01px solid #eeeeee;
+    }
+
+    .middle-left1{
+        height: 78px;
+        width: 50%;
+
+        border:0.01px solid #eeeeee;
+    }
+
+    .middle-left2{
+        height: 100%;
+        width: 50%;
+
+        border:0.01px solid #eeeeee;
+    }
+
+    .middle-right1{
+        height: 100%;
+        width: 50%;
+
+        border:0.01px solid #eeeeee;
+    }
+
+
+
+    .middle-right2{
+        height: 78px;
+        width: 50%;
+
+        border:0.01px solid #eeeeee;
+    }
+    .logo{
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #bda380;
+        color:white;
+        font-size: 9px;
+        text-align: center;
+        line-height: 18px;
+        margin-right: 27px;
+        flex-shrink:0;
+        
+    }
+    .middle-left1,.middle-left2,.middle-right1,.middle-right2{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+  
+
+    .logo-title{
+        color: #a4a4a4;
+        font-size: 16px;
+
+    }
+    .logo-content{
+        color:#bfbfbf;
+        font-size: 14px;
+        margin-top:28px;
+    }
+
+</style>
+
+<body>
+    <div class="outside">
+        <div class="top">
+            <span>我们的承诺</span>
+            <span>/Our commitment</span>
+
+        </div>
+        <div class="middle">
+            <div class="middle-left">
+                <div class="middle-left1">
+                    <div class="logo">1</div>
+                    <div>
+                        <div class="logo-title"><span>品牌制造商</span></div>
+                        <div class="logo-content"><span>我们合作的厂商全部是国内外一二线厂家</span></div>
+                    </div>
+
+                </div>
+                <div class="middle-left2">
+                    <div class="logo">2</div>
+                    <div>
+                        <div class="logo-title"><span>7天无理由退换货</span></div>
+                        <div class="logo-content"><span>收货7天内(以卖际盔收百期为届厂进行;退货申请，15天内进行换货申请</span></div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="middle-right">
+                <div class="middle-right1">
+                    <div class="logo">3</div>
+
+                    <div>
+                        <div class="logo-title"><span>出口标准质检</span></div>
+                        <div class="logo-content"><span>所有产品按国家出口标准进行质检</span></div>
+                    </div>
+                </div>
+                <div class="middle-right2">
+                    <div class="logo">4</div>
+                    <div>
+                        <div class="logo-title"><span>无忧正品保证</span></div>
+                        <div class="logo-content"><span>产品正品保证，支持专柜验货，假一罚十</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

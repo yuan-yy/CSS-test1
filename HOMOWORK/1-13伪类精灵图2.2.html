@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+    .outside {
+
+        position: relative;
+        width: 432px;
+        height: 389px;
+
+
+        margin: 0 auto;
+        border: 0.001px solid #eeeeee;
+    }
+
+
+    .title {
+        width: 100%;
+        height: 86px;
+        text-align: center;
+        line-height: 86px;
+
+
+        /* border:0.001px solid #eeeeee; */
+
+
+
+    }
+
+    .title:hover {
+        background-color: #ff9933;
+
+    }
+
+    .title:hover::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border: 20px solid #ff9933;
+        border-color: #ff9933 transparent transparent transparent;
+
+        top: 86px;
+        left: 196px;
+    }
+
+
+    .title:hover span {
+        color: white
+    }
+
+
+
+    .title span {
+        height: 22px;
+        color: black;
+        font-weight: 500;
+
+    }
+
+
+
+    /* #################以下为content的样式 ############################3*/
+    .content {
+        width: 390px;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 120px;
+        display: none;
+    }
+
+
+    .logo {
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background-color: #ff9933;
+        flex-shrink: 0;
+
+        margin-top: 2px;
+        margin-right: 10px;
+
+    }
+
+    .content-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        margin-top: 20px;
+
+    }
+
+    .content-title p:nth-of-type(1) {
+        font-size: 14px;
+        font-weight: 600;
+        color: #3d3d3e;
+    }
+
+    .content-title p:nth-of-type(2) {
+        font-size: 11px;
+        color: #a6a6a6;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+
+
+    .title:hover+.content {
+        display: flex;
+
+        /* visibility: hidden; */
+    }
+</style>
+
+<body>
+
+
+    <div class="outside">
+
+        <div class="toggle"></div>
+        <div class="title">
+            <span>公司新闻</span>
+        </div>
+        <div class="content">
+
+            <div class="content-1">
+                <div class="logo"></div>
+                <div class="content-title">
+                    <p>商标局召开异议工作会确保“又好又快”地做好异议</p>
+                    <p>来源:国家工商行政管理总局商标局商标局召开异议工作会确保“又好又快”地故好异议工作近日,为了贯彻落实商标局9月5</p>
+
+                </div>
+            </div>
+            <div class="content-1">
+                <div class="logo"></div>
+
+                <div class="content-title">
+                    <p>关于国内注册商标不再通过书式申请出具注册证明</p>
+                    <p>来源:国家工商行政管理总局商标局商标局召开异议工作会确保“又好又快”地柯好异议工作近日,为了贯彻落实商标局9月5日局务</p>
+                </div>
+            </div>
+            <div class="content-1">
+
+                <div class="logo"></div>
+                <div class="content-title">
+                    <p>马德里体系:品牌“走出去”的“通行证”</p>
+                    <p>来源:国家工商行政管理总局商标局商标局召开异议工作会确保“又好又快”地做好异议工作近日,为了贯彻落实商标局9月5日局务</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

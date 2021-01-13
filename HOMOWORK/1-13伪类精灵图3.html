@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+    .outside {
+        width: 242px;
+        height: 696px;
+        border: 0.01px solid #cccccc;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        margin: 0 auto;
+    }
+
+    .circle {
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 6px;
+
+        background-image: url("/Picture/wljlt.png");
+        background-position-x: 0.1px;
+
+    }
+
+    .outside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .content-left,
+    .content-right {
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: -25px;
+    }
+
+    .content-left>div {
+        margin-top: 25px;
+    }
+
+    .content-right>div {
+        margin-top: 25px;
+    }
+
+
+    .circle2 {
+        background-position-x: -100px;
+        background-position-y: -200px;
+    }
+
+    .circle3 {
+        background-position-x: -100px;
+        background-position-y: -400px;
+    }
+
+    .circle4 {
+        background-position-x: -100px;
+        background-position-y: -600px;
+    }
+
+    .circle5 {
+        background-position-x: -100px;
+        background-position-y: -800px;
+    }
+
+
+    .circle6 {
+        background-position-x: -100px;
+        background-position-y: -100px;
+    }
+
+    .circle7 {
+        background-position-x: -100px;
+        background-position-y: -300px;
+    }
+
+    .circle8 {
+        background-position-x: -100px;
+        background-position-y: -500px;
+    }
+
+
+    .circle9 {
+        background-position-x: -100px;
+        background-position-y: -700px;
+    }
+
+    .circle10 {
+        background-position-x: -100px;
+        background-position-y: -900px;
+    }
+
+
+    .circle:hover {
+        background-position-x: 0px;
+
+    }
+
+    .circle1:hover {
+        background-position-x: -100px;
+    }
+
+
+    .circle ~ div{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .circle + div{
+        font-size: 12px;
+        font-weight: 100;
+        margin-top:10px;
+        margin-bottom: 5px;
+    }
+</style>
+
+<body>
+    <div class="outside">
+        <div class="content-left">
+            <div>
+                <div class="circle circle1"></div>
+                <div>不可让出用地</div>
+                <div>50%</div>
+            </div>
+            <div>
+                <div class="circle circle2"></div>
+                <div>道路</div>
+                <div>24%</div>
+            </div>
+            <div>
+                <div class="circle circle3"></div>
+                <div>绿地</div>
+                <div>17.5%</div>
+            </div>
+            <div>
+                <div class="circle circle4"></div>
+                <div>配套</div>
+                <div>8.5%</div>
+            </div>
+            <div>
+                <div class="circle circle5"></div>
+                <div>商业混住</div>
+                <div></div>
+            </div>
+
+        </div>
+        <div class="content-right">
+
+            <div>
+                <div class="circle circle6"></div>
+                <div>可让出用地</div>
+                <div>50%</div>
+            </div>
+            <div>
+                <div class="circle circle7"></div>
+                <div>产业</div>
+                <div>25%</div>
+            </div>
+            <div>
+                <div class="circle circle8"></div>
+                <div>住宅</div>
+                <div>15%</div>
+            </div>
+            <div>
+                <div class="circle circle9"></div>
+                <div>商业</div>
+                <div>10%</div>
+            </div>
+            <div>
+                <div class="circle circle10"></div>
+                <div>全部</div>
+                <div></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

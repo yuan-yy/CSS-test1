@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,46 +8,22 @@
 </head>
 
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-*{
-    margin:0;padding:0;
-}
-    li{
+    li {
         list-style: none;
     }
 
-    .side{
+    .side {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-around;
     }
 
-    .outside{
-        width: 245px;
-        height: 348px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        /* border:1px solid rgb(255, 119, 57); */
-        border-right: 0.1px solid #eeeeee;
-    border-left: 0.1px solid #eeeeee;
-    border-bottom: 0.1px solid transparent;
-    border-top: 0.1px solid transparent;
-
-        /* position:absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        top:0;
-        margin:auto; */
-
-    }
-
-
-    .outside2{
+    .outside {
         width: 245px;
         height: 348px;
 
@@ -58,110 +35,150 @@
         /* border:1px solid rgb(255, 119, 57); */
         border-right: 0.1px solid #eeeeee;
         border-left: 0.1px solid #eeeeee;
-        border-top:0.1px solid transparent;
+        border-bottom: 0.1px solid transparent;
+        border-top: 0.1px solid transparent;
+
+        /* position:absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top:0;
+        margin:auto; */
+
+    }
+
+
+    .outside2 {
+        width: 245px;
+        height: 348px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        /* border:1px solid rgb(255, 119, 57); */
+        border-right: 0.1px solid #eeeeee;
+        border-left: 0.1px solid #eeeeee;
+        border-top: 0.1px solid transparent;
         border-bottom: 0.1px solid transparent;
     }
-    .outside:hover{
-             border:0.001px solid rgb(255, 119, 57);
+
+    .outside:hover {
+        border: 0.001px solid rgb(255, 119, 57);
     }
-    .img{
-        width:197px;
+
+    .img {
+        width: 197px;
         height: 197px;
     }
-    .img img{
+
+    .img img {
         width: 100%;
         height: 100%;
     }
 
-    .title{
+    .title {
         /* height: 40px; */
 
         width: 197px;
         line-height: 17px;
-         
-         margin-top:10px;
+
+        margin-top: 10px;
     }
-    .title span,.tilte-span{  
+
+    .title span,
+    .tilte-span {
         color: #666666;
         font-size: 13px;
     }
 
-    .content{
+    .content {
         width: 197px;
         /* height: 26px; */
         margin-top: 13px;
     }
 
-    .content span,.content-span{
+    .content span,
+    .content-span {
         font-size: 12px;
-        color:#999999;
+        color: #999999;
     }
-    .money{
+
+    .money {
         /* height: 30px; */
         width: 197px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
-        margin-top:19px;
+        margin-top: 19px;
     }
 
-    .money .money-1 span:nth-of-type(1){
-        color:#ff5000;
+    .money .money-1 span:nth-of-type(1) {
+        color: #ff5000;
         font-size: 16px;
 
     }
-    .money .money-1 span:nth-of-type(2){
-        color:#999999;
-        font-size: 9px;
-    }
-    .money-1-span span:nth-of-type(1){
-        color:#ff5000;
-        font-size: 16px;
-    }
-    .money-1-span span:nth-of-type(2){
-        color:#999999;
+
+    .money .money-1 span:nth-of-type(2) {
+        color: #999999;
         font-size: 9px;
     }
 
-    .money-2 span,.money-2-span{
-        font-size:12px;
-        color:#999999;
+    .money-1-span span:nth-of-type(1) {
+        color: #ff5000;
+        font-size: 16px;
+    }
+
+    .money-1-span span:nth-of-type(2) {
+        color: #999999;
+        font-size: 9px;
+    }
+
+    .money-2 span,
+    .money-2-span {
+        font-size: 12px;
+        color: #999999;
         margin-left: 50px;
     }
-    .content1{
-        width:197px;
+
+    .content1 {
+        width: 197px;
         height: 112px;
     }
 
 
-    ul li:nth-of-type(1){
+    ul li:nth-of-type(1) {
         margin-top: 3px;
     }
-    ul li:nth-of-type(2){
+
+    ul li:nth-of-type(2) {
         margin-top: -4px;
     }
-    ul li:nth-of-type(3){
+
+    ul li:nth-of-type(3) {
         margin-top: 13px;
     }
-    ul li:nth-of-type(4){
+
+    ul li:nth-of-type(4) {
         margin-top: 19px;
     }
 
-    .imga{
+    .imga {
         margin-top: -4px;
     }
 
-    .outside3{
+    .outside3 {
         position: relative;
         /* height: 328px; */
     }
 
-    .outside3:hover{
-        border:0.001px solid rgb(255, 119, 57);
+    .outside3:hover {
+        border: 0.001px solid rgb(255, 119, 57);
     }
 
-    .outside3:hover::after{
+    .outside3:hover::after {
         content: "查看详情";
         display: block;
         width: 245px;
@@ -171,35 +188,34 @@
         text-align: center;
         font-size: 25px;
         line-height: 75px;
-        color:white;
-        bottom:0px;
+        color: white;
+        bottom: 0px;
     }
-
-
 </style>
+
 <body>
 
     <div class="side">
-<!-- ################################################第二个######################################## -->
-    <div class="outside">
-        <div class="img">
-            <img class="imga" src="../Picture/cup.png" alt="">
-        </div>
+        <!-- ################################################第二个######################################## -->
+        <div class="outside">
+            <div class="img">
+                <img class="imga" src="../Picture/cup.png" alt="">
+            </div>
 
-        <div class="content1">
-            <ul>
-                <li><span class="tilte-span">一次性纸杯定制印logo订做创意</span> </li>
-                <li><span class="tilte-span">广告杯订制加厚杯子定做低价字</span> </li>               
-                <li><span class="content-span">评论 0 收藏 4352</span></li>
-                <li>  <span class="money-1-span"><span>￥93</span>
-                    <span ><del>￥111</del></span></span>
-                    <span class="money-2-span" >月销321笔</span>   
-                </li>
-            </ul>
-        </div>
+            <div class="content1">
+                <ul>
+                    <li><span class="tilte-span">一次性纸杯定制印logo订做创意</span> </li>
+                    <li><span class="tilte-span">广告杯订制加厚杯子定做低价字</span> </li>
+                    <li><span class="content-span">评论 0 收藏 4352</span></li>
+                    <li> <span class="money-1-span"><span>￥93</span>
+                            <span><del>￥111</del></span></span>
+                        <span class="money-2-span">月销321笔</span>
+                    </li>
+                </ul>
+            </div>
 
 
-<!-- 
+            <!-- 
 
         <div class="title">
             <span>一次性纸杯定制印logo订做创意广告杯订制加厚杯子定做低价字</span>
@@ -216,55 +232,56 @@
                 <span>月销321笔</span>
             </div>
         </div> -->
-    </div>
+        </div>
 
-<!-- ################################################第一个######################################## -->
-    <div class="outside2">
-        <div class="img">
-            <img src="../Picture/cup.png" alt="">
-        </div>
-        <div class="title">
-            <span>一次性纸杯定制印logo订做创意广告杯订制加厚杯子定做低价字</span>
-        </div>
-        <div class="content">
-            <span>评论 0 收藏 4352</span>
-        </div>
-        <div class="money">
-            <div class="money-1">
-                
-                <span>￥93</span>
-                <span><del>￥111</del></span>
+        <!-- ################################################第一个######################################## -->
+        <div class="outside2">
+            <div class="img">
+                <img src="../Picture/cup.png" alt="">
             </div>
-            <div class="money-2">
-                <span>月销321笔</span>
+            <div class="title">
+                <span>一次性纸杯定制印logo订做创意广告杯订制加厚杯子定做低价字</span>
+            </div>
+            <div class="content">
+                <span>评论 0 收藏 4352</span>
+            </div>
+            <div class="money">
+                <div class="money-1">
+
+                    <span>￥93</span>
+                    <span><del>￥111</del></span>
+                </div>
+                <div class="money-2">
+                    <span>月销321笔</span>
+                </div>
             </div>
         </div>
-    </div>
 
-<!-- ################################################第三个######################################## -->
+        <!-- ################################################第三个######################################## -->
 
-<div class="outside outside3">
-    <div class="img">
-        <img class="imga" src="../Picture/coat.png" alt="">
-    </div>
+        <div class="outside outside3">
+            <div class="img">
+                <img class="imga" src="../Picture/coat.png" alt="">
+            </div>
 
-    <div class="content1">
-        <ul>
-            <li>
-                <img src="../Picture/xslz.png" style="    position: absolute;
+            <div class="content1">
+                <ul>
+                    <li>
+                        <img src="../Picture/xslz.png" style="    position: absolute;
                 top: 222px;">
-                <span class="tilte-span">新势同冬季新款中长款绣花貂戎</span> </li>
-            <li><span class="tilte-span">大衣女韩版正品双面绒连帽加厚</span> </li>               
-            <li><span class="content-span">&nbsp;</span></li>
-            <li>  <span class="money-1-span"><span>￥198</span>
-                <span><del></del></span></span>
-                <span class="money-2-span"  style="margin-left: 113px;">销量:3</span>   
-            </li>
-        </ul>
-    </div>
+                        <span class="tilte-span">新势同冬季新款中长款绣花貂戎</span>
+                    </li>
+                    <li><span class="tilte-span">大衣女韩版正品双面绒连帽加厚</span> </li>
+                    <li><span class="content-span">&nbsp;</span></li>
+                    <li> <span class="money-1-span"><span>￥198</span>
+                            <span><del></del></span></span>
+                        <span class="money-2-span" style="margin-left: 113px;">销量:3</span>
+                    </li>
+                </ul>
+            </div>
 
 
-<!-- 
+            <!-- 
 
     <div class="title">
         <span>一次性纸杯定制印logo订做创意广告杯订制加厚杯子定做低价字</span>
@@ -281,38 +298,39 @@
             <span>月销321笔</span>
         </div>
     </div> -->
-</div>
+        </div>
 
 
-<!-- ################################################第四个######################################## -->
-<div class="outside2">
-    <div class="img">
-        <img src="../Picture/coat.png" alt="">
-    </div>
-    <div class="title">
-        <img src="../Picture/xslz.png" style="    position: absolute;
+        <!-- ################################################第四个######################################## -->
+        <div class="outside2">
+            <div class="img">
+                <img src="../Picture/coat.png" alt="">
+            </div>
+            <div class="title">
+                <img src="../Picture/xslz.png" style="    position: absolute;
                 top: 224px;">
-        <span>
-            新势同冬季新款中长款绣花貂戎
-            大衣女韩版正品双面绒连帽加厚
-            </span>
-    </div>
-    <div class="content">
-        <span>&nbsp;</span>
-    </div>
-    <div class="money">
-        <div class="money-1">
-            <span>￥198</span>
-            <span><del></del></span>
-        </div>
-        <div class="money-2">
-            <span>销量:3</span>
-        </div>
-    </div>
+                <span>
+                    新势同冬季新款中长款绣花貂戎
+                    大衣女韩版正品双面绒连帽加厚
+                </span>
+            </div>
+            <div class="content">
+                <span>&nbsp;</span>
+            </div>
+            <div class="money">
+                <div class="money-1">
+                    <span>￥198</span>
+                    <span><del></del></span>
+                </div>
+                <div class="money-2">
+                    <span>销量:3</span>
+                </div>
+            </div>
 
-</div>
+        </div>
 
 
 
 </body>
+
 </html>

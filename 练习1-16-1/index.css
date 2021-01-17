@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+li{
+    list-style: none;
+}
+.contain{
+    width: 562px;
+}
+
+ul li{
+    width: 50%;
+    height: 96px;
+    float: left;
+
+    background-color: darkred;
+}
+ul .content{
+    /* float: right; */
+    background-color: darkkhaki;
+}

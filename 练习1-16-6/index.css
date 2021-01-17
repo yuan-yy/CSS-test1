@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.outside{
+    width: 500px;
+    height: 500px;
+    border:1px solid black;
+
+    margin:0 auto;
+    /* position: relative; */
+}
+
+.contain{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 150px;
+    background-color:yellow;
+    border: 1px solid black;
+    position: relative;
+   
+}
+
+.contain::after,.contain::before{
+    content: "";
+    position: absolute;
+    top:50%;
+    bottom:0;
+    background-color: green;
+    left: 30px;
+    right: 30px;
+    border-radius: 50px/20px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.6);
+    z-index: -1;
+
+}
+
+
+
+

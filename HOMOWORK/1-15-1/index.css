@@ -1,0 +1,62 @@
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+
+.outside{
+
+    width: 1896px;
+    height: 630px;
+    background-color: #f9bb00;
+    margin: 0 auto;
+}
+
+.top{
+    color:#666666;
+    font-size:43px;
+    font-weight: 700;
+    text-align: center;
+    padding-top:69px;
+}
+
+.middle{
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    height: 33px;
+    font-size: 31px;
+    margin-top: 25px;
+    margin-bottom: 60px;
+
+}
+
+.bottom .nav{
+    width: 1339px;
+    margin: 0 auto;
+
+    /* border:1px solid black; */
+}
+.news{
+    overflow: hidden;
+    margin: 0 -20px;
+}
+
+.nav ul li{
+    float: left;
+    width:20%;
+    text-align: center;
+}
+.logo{
+    font-size: 80px;
+    width: 232px;
+    height: 232px;
+    border-radius: 50%;
+    background-color: white;
+    line-height: 232px;
+    margin:0 auto;
+}
+
+.title{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 24px;
+}

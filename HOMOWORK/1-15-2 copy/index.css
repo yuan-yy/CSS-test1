@@ -1,0 +1,263 @@
+*{margin: 0;padding: 0;}
+a{
+    text-decoration: none;
+    color:#666666;
+
+}
+li{
+    list-style: none;
+}
+
+
+.outside{
+    width: 1803px;
+    height: 724px;
+    margin: 0 auto;
+}
+
+a::after{
+    content: "";
+    
+}
+
+
+.content-left{
+    width: 236px;
+    /* border: 1px solid black; */
+
+    position: relative;
+    /* text-align: center; */
+}
+
+
+.nav-ul li{
+    padding-top:12px;
+    padding-bottom:12px;
+    padding-left: 30px;
+   
+}
+
+.nav-ul>li:hover{
+    background-color: rgb(255,228,220);
+    color:rgb(255,122,156);
+}
+
+
+.nav-ul>li:hover .message{
+    visibility: visible;
+}
+
+
+
+.nav-ul>li:hover .cnxh{
+    color:black;
+
+    visibility: visible;
+}
+.nav-ul >li:hover >a{
+    color:rgb(255,122,156);
+    
+
+}
+
+.nav-ul >li a:hover{
+    text-decoration: underline;
+}
+.nav-ul >li::after{
+    content: "\e612";
+    font-family: "iconfont"; 
+    float: right;
+    margin-right: 25px;
+    margin-top: -18px;
+}
+
+
+.message{
+    position: absolute;
+    width: 530px;
+    height: 630px;
+    /* border: 1px solid black; */
+    top:0;
+    left:236px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* overflow: hidden; */
+
+
+    visibility: hidden;
+}
+
+.content{
+    width: 500px;
+    /* height: 200px; */
+    /* overflow: scroll; */
+    position: absolute;
+   
+}
+
+.contents{
+    width: 488px;
+    margin-top: 24px;
+
+    /* border:1px solid black; */
+   
+
+    
+}
+.contents::after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.contents div:nth-of-type(1){
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contents div:nth-of-type(2) a{
+    margin-right: 23px;
+    float: left;
+    margin-top:15px;
+    font-size: 14px;
+}
+
+.nv{
+    float: left;
+    width: 244px;
+}
+.a{
+    float: none;
+    margin-left: 245px;
+    margin-top: 112px;
+    
+}
+.contents div:nth-of-type(2) a:hover{
+    text-decoration: none;
+}
+
+
+/* ##########################这里面写的是右边的内容#################### */
+
+
+
+
+
+
+
+.nav-ul{
+    position: relative;
+    border: 1px solid black;
+}
+
+.message1{
+    position: absolute;
+    left: 235px;
+    top: -1px;
+    width: 500px;
+    height: 500px;
+    /* background-color: blue; */
+
+
+    border:1px solid black;
+
+    /* display: none; */
+}
+
+
+.nav-ul li:hover .message1{
+    display: block;
+}
+
+
+
+
+.nav .nav-ul>.li:hover .message1{
+    visibility:visible;
+}
+.nav-ul >li:hover .message1{
+    visibility: visible;
+}
+
+.nav-ul >li:hover .message2{
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ###################猜你喜欢##################### */
+
+.cnxh{
+    width: 320px;
+    height: 646px;
+    background-color: white;
+    position: absolute;
+    left: 760px;
+    right: 0;
+    text-align: center;
+    border-left: 1px solid #eee;
+
+    visibility: hidden;
+}
+
+
+.cnxh-word{
+    margin-top: 30px;
+}
+
+.cnxh img{
+    width: 122px;
+    height: 122px;
+    
+}
+.cnxh ul li{
+    width: 122px;
+    height: 122px;
+    float: left;
+ 
+    padding-top: 38px;
+    padding-left: 22px;
+}
+
+
+.cnxh ul li div:nth-of-type(1){
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+
+.cnxh ul li div:nth-of-type(1) img{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.cnxh ul li div:nth-of-type(1) img:hover{
+    opacity: 0.5;
+}
+.cnxh ul li div:nth-of-type(2){
+    margin-top: 3px;
+    float: left;
+}
+
+.cnxh ul li div:nth-of-type(1):hover~div a{
+    color:red;
+
+    text-decoration: none;
+} 
+.cnxh ul li div:nth-of-type(2) a:hover{
+    text-decoration: none;
+    color:red;
+}
+
+
+

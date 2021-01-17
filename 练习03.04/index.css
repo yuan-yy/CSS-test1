@@ -1,0 +1,98 @@
+*{margin: 0;padding: 0;border: 0;}
+
+
+.outside{
+    width: 1897px;
+    height: 266px;
+    margin: 0 auto;
+    position: relative;
+
+    /* pointer-events: none;
+    cursor: pointer; */
+    /* opacity: .2; */
+    
+}
+li{
+    list-style: none;
+    position: relative;
+    margin-right: 50px;
+    
+
+}
+a{
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+}
+
+.top{
+    height: 58px;
+    width: 100%;  
+   
+}
+
+.top >div:nth-of-type(1){
+    float: left;
+}
+.top>div:nth-of-type(2){
+
+    margin-right: 20px;
+    float: right;
+}
+
+.top div{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.top>div:nth-of-type(2) ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 231px;
+}
+
+.toggle{
+    position: absolute;
+    border: 4px solid black;
+    border-color: black transparent transparent transparent;
+    top: 11px;
+    right: -15px;
+}
+.content{
+    text-align:center ;
+    position: relative;
+    z-index: 10;
+}
+
+
+
+.tk{
+    position: absolute;
+    width: 160px;
+    height: 163px;
+    background-color: white;
+    z-index: 100000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    right: 761px;
+    top: 66px;
+}
+
+.tk div{
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 22px;
+}
+
+.tk .tk-haha{
+    position:absolute;
+    border:7px solid white;
+    border-color: transparent transparent white transparent;
+    top: -14px;
+    right: 11px;
+}
+}

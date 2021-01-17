@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+li{
+    list-style: none;
+}
+.contain{
+    width: 562px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+ul {
+  width: 50%;
+  /* height: 96px; */
+  float: left;
+ 
+}
+
+ul li{
+    width: 100%;
+    height: 96px;    
+}
+
+
+.left li:nth-of-type(odd){
+    background-color: darkorange;
+}
+
+.right li:nth-of-type(even){
+    background-color: darkorange;
+}

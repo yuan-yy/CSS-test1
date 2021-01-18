@@ -20,7 +20,7 @@ a{
     margin: 0 auto;
     border: 1px solid white;
     position: relative;
-    z-index: -2;
+    z-index: 2;
 
 }
 
@@ -48,7 +48,7 @@ a{
 .contents{
     width: 371px;
     /* height: 266px; */
-    background-color: #fefdfc;
+    /* background-color: #fefdfc; */
     margin:0 auto;
     position: relative;
     padding-top: 80px;

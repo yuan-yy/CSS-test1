@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+
+.contain{
+    position: relative;
+    width: 440px;
+    height: 400px;
+    margin: 0 auto;
+}
+.clock{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border:20px solid rgb(254,153,154);
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top:60px;
+    background-color: white;
+    z-index: 1;
+    background-image: url("./picture/时钟.jpg");
+    background-size: 105%;
+    background-position: -11px -14px;
+
+        /* box-shadow: 0 0 7px 9px rgb(228,228,228); */
+}
+
+
+
+.zuidi{
+    position: absolute;
+    top: -60px;
+    width: 400px;
+    height: 400px;
+    border:20px solid rgb(254,153,154);
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top:60px;
+    background-color: white;
+    /* z-index: 1; */
+
+    box-shadow: 0 0 7px 9px rgb(228,228,228);
+}
+
+
+
+/* #################开始转耳朵################## */
+
+
+.zashui1{
+    position: absolute;
+    top: 99px;
+    left: -15px;
+    width: 20px;
+    height: 15px;
+    background-color: rgb(254,153,154);
+    transform: rotate(56deg);
+
+
+    animation-name: zashui;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+ 
+}
+
+
+@keyframes zashui{
+    0%{
+        transform: rotate(56deg);
+    }
+    50%{
+        transform: rotate(56deg) translate(-1px,-8px);
+    }
+    100%{
+        transform: rotate(56deg);
+    }
+}
+
+
+.zashui2{
+    position: absolute;
+    top: 99px;
+    right: -15px;
+    width: 20px;
+    height: 15px;
+    background-color: rgb(254,153,154);
+    transform: rotate(-56deg);
+}
+
+.left-ed{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    border:15px solid rgb(254,153,154);
+    border-radius: 30%;
+    animation-name: left-erduo;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transform: rotate();
+    box-shadow: 0 0 7px 9px rgb(228,228,228);
+}
+
+.right-ed{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    border:15px solid rgb(254,153,154);
+    border-radius: 30%;
+    animation-name: right-erduo;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    box-shadow: 0 0 7px 9px rgb(228,228,228);
+}
+
+
+@keyframes left-erduo{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    75%{
+        transform: rotate(135deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+@keyframes right-erduo{
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(-45deg);
+    }
+    50%{
+        transform: rotate(-90deg);
+    }
+    75%{
+        transform: rotate(-135deg);
+    }
+    100%{
+        transform: rotate(-180deg);
+    }
+}
+
+
+
+/* ########################左右小手###################### */
+
+.left-hand{
+    position: absolute;
+    left: -78px;
+    top:205px;
+    height: 10px;
+    width:80px ;
+    background-color: rgb(254,153,154);
+    box-shadow: 0 0 5px 5px rgb(228,228,228);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+
+    animation-name: hand-left;
+    animation-duration: 1s;
+    transform-origin: right center;
+    animation-iteration-count: infinite;
+
+}
+
+.right-hand{
+    position: absolute;
+    right: -78px;
+    top:205px;
+    height: 10px;
+    width:80px ;
+    background-color: rgb(254,153,154);
+    box-shadow: 0 0 5px 5px rgb(228,228,228);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    animation-name: hand-right;
+    animation-duration: 1s;
+    transform-origin: left center;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hand-left{
+    0%{
+        transform:rotate(-30deg)
+    }
+    /* 25%{
+        transform:rotate(deg)
+    } */
+    /* 50%{
+        transform:rotate(0deg)
+    } */
+    /* 75%{
+        transform:rotate(-30deg)
+    } */
+    50%{
+        transform:rotate(30deg)
+    }
+
+    100%{
+        transform:rotate(-30deg)
+    }
+}
+@keyframes hand-right{
+    0%{
+        transform:rotate(30deg)
+    }
+    /* 25%{
+        transform:rotate(deg)
+    } */
+    /* 50%{
+        transform:rotate(0deg)
+    } */
+    /* 75%{
+        transform:rotate(-30deg)
+    } */
+    50%{
+        transform:rotate(-30deg)
+    }
+
+    100%{
+        transform:rotate(30deg)
+    }
+}
+
+
+/* #################这是最下面的小圆圆################### */
+
+.xiaoyuanyuan{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(254,153,154);
+    margin: 0 auto;
+    margin-top:80px;
+    transform-origin: center -200px;
+    transform:rotate(30deg);
+    animation-name: xiaoyuanyuan;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    /* animation-timing-function: cubic-bezier(.58,.07,.99,.24) ; */
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes xiaoyuanyuan{
+    0%{
+        transform:rotate(30deg);
+        
+    }
+
+
+    /* 25%{
+        transform:rotate(0deg);
+    } */
+    50%{
+        transform:rotate(-30deg);
+    }
+
+    /* 75%{
+        transform: rotate(-30deg);
+    } */
+
+    100%{
+        transform: rotate(30deg);
+    }
+
+}
+
+
+
+/* #################此处为眼睛############# */
+
+
+.left-eye{
+    position: absolute;
+    top:0;
+    left: 0;
+    border:1px solid black;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+
+.s{
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background-color: red;
+    top: 199.5px;
+    left:0;
+    transform-origin: right center;
+    transform: rotate(0deg);
+    animation-name: miaozhong;  
+    animation-duration: 60s;
+    animation-timing-function: ease;
+}
+
+@keyframes miaozhong{
+    0%{
+        transform: rotate(1deg);
+    }
+    1.66%{
+
+        transform:rotate(6deg)
+    }
+  
+    3.32%{
+         transform: rotate(12deg);
+     }
+    4.98%{
+        transform: rotate(18deg);
+    }
+    6.64%{
+        transform: rotate(24deg);
+    }
+    8.3%{
+        transform: rotate(30deg);
+    }
+    9.66%{
+        transform: rotate(36deg);
+    }
+    11.62%{
+        transform: rotate(42deg);
+    }
+    13.28%{
+        transform: rotate(48deg);
+    }
+    14.94%{
+        transform: rotate(54deg);
+    }
+    16.6%{
+        transform: rotate(60deg);
+    }
+    18.26%{
+        transform: rotate(66deg);
+    }
+
+    19.92%{
+        transform: rotate(72deg);
+    }
+    21.58%{
+        transform: rotate(78deg);
+    } 
+    23.24%{
+        transform: rotate(84deg);
+    }
+    24.9%{
+        transform: rotate(90deg);
+    }
+    26.56%{
+        transform: rotate(96deg);
+    }
+
+
+    28.22%{
+         transform: rotate(102deg);
+     }
+     29.88%{
+        transform: rotate(108deg);
+    }
+    34.54%{
+        transform: rotate(114deg);
+    }
+    33.2%{
+        transform: rotate(120deg);
+    }
+    3.32%{
+        transform: rotate(126deg);
+    }
+    34.86%{
+        transform: rotate(132deg);
+    }
+    36.52%{
+        transform: rotate(138deg);
+    }
+    38.18%{
+        transform: rotate(144deg);
+    }
+    39.84%{
+        transform: rotate(150deg);
+    }
+    41.5%{
+        transform: rotate(156deg);
+    }
+    43.16%{
+        transform: rotate(162deg);
+    }
+    44.82%{
+        transform: rotate(168deg);
+    }
+    46.48%{
+        transform: rotate(174deg);
+    }
+    48.14%{
+        transform: rotate(180deg);
+    }
+    49.8%{
+        transform: rotate(186deg);
+    }
+   51.46%{
+        transform: rotate(192deg);
+    }
+    53.12%{
+        transform: rotate(198deg);
+    }
+    54.78%{
+        transform: rotate(204deg);
+    }
+   56.44%{
+        transform: rotate(210deg);
+    }
+    58.1%{
+        transform: rotate(216deg);
+    }
+    59.76%{
+        transform: rotate(222deg);
+    }
+    61.42%{
+        transform: rotate(228deg);
+    }
+ 
+    63.08%{
+        transform: rotate(234deg);
+    }
+
+    64.74%{
+        transform: rotate(240deg);
+    }
+    
+    66.4%{
+        transform: rotate(246deg);
+    }
+    
+    68.06%{
+        transform: rotate(252deg);
+    }
+    
+    69.72%{
+        transform: rotate(258deg);
+    }
+    
+    71.38%{
+        transform: rotate(264deg);
+    }
+    
+    73.04%{
+        transform: rotate(270deg);
+    }
+    
+    74.7%{
+        transform: rotate(276deg);
+    }
+
+    
+    76.36%{
+        transform: rotate(282deg);
+    }
+    
+    78.02%{
+        transform: rotate(288deg);
+    }
+    
+    79.68%{
+        transform: rotate(294deg);
+    }
+    
+    81.34%{
+        transform: rotate(300deg);
+    }
+    
+    83%{
+        transform: rotate(306deg);
+    }
+    
+    84.66%{
+        transform: rotate(312deg);
+    }
+    
+    86.32%{
+        transform: rotate(318deg);
+    }
+    
+    87.98%{
+        transform: rotate(324deg);
+    }
+    
+    89.64%{
+        transform: rotate(330deg);
+    }
+    
+    91.3%{
+        transform: rotate(336deg);
+    }
+    
+    92.96%{
+        transform: rotate(342deg);
+    }
+    
+    94.62%{
+        transform: rotate(348deg);
+    }
+    
+    96.28%{
+        transform: rotate(354deg);
+    }
+    
+    97.94%{
+        transform: rotate(360deg);
+    }
+    
+    100%{
+        transform: rotate(0deg);
+    }
+    
+   
+
+}

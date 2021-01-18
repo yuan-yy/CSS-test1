@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+li{
+    list-style: none;
+}
+
+.outside{
+    width: 1390px;
+    height:460px ;
+    margin: 0 auto;
+}
+
+.contain{
+    width:1285px;
+    margin:0 auto;
+
+
+}
+.contents{
+    border:1px solid rgb(228,228,228);
+    /* height: 35px; */
+    line-height: 35px;
+    font-size: 12px;
+    margin-top: 10px;
+    padding-left: 8px;
+}
+.contents span{
+    line-height: 0px;
+
+}
+.div{
+    margin-top: 30px;
+}
+
+
+.content1:hover{
+   transform: scale(1.009);
+   box-shadow: 0 0 3px rgb(0,0,0,0.2);
+   
+}
+
+.contents:hover span{
+    color:red
+}
+
+
+.content3:hover{
+    transform: translate(3px);
+   box-shadow: 0 0 1px rgb(0,0,0,0.5);
+
+}
+
+.content5:hover{
+    border-left: 6px solid black    ;
+   box-shadow: 0 0 1px rgb(0,0,0,0.5);
+
+}
+
+.title{
+    margin-top: 25px;
+}

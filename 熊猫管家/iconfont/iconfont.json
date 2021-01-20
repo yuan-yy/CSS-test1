@@ -1,0 +1,212 @@
+{
+  "id": "2328883",
+  "name": "work",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "438321",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "650793",
+      "name": "生活－大众点评",
+      "font_class": "shenghuodazhongdianping",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "846126",
+      "name": "邮箱",
+      "font_class": "youxiang",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "1773189",
+      "name": "微博",
+      "font_class": "unie61d",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "3853995",
+      "name": "仪表",
+      "font_class": "yibiao",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "6264282",
+      "name": "定位",
+      "font_class": "dingwei",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "10136956",
+      "name": "通话",
+      "font_class": "tonghua",
+      "unicode": "e677",
+      "unicode_decimal": 58999
+    },
+    {
+      "icon_id": "12042399",
+      "name": "团队",
+      "font_class": "tuandui",
+      "unicode": "e711",
+      "unicode_decimal": 59153
+    },
+    {
+      "icon_id": "12434406",
+      "name": "房子",
+      "font_class": "fangzi",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "14259809",
+      "name": "抖音",
+      "font_class": "douyin",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "18107384",
+      "name": "微信",
+      "font_class": "weixin5",
+      "unicode": "eca4",
+      "unicode_decimal": 60580
+    },
+    {
+      "icon_id": "9372180",
+      "name": "加",
+      "font_class": "jia",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "1130442",
+      "name": "IN",
+      "font_class": "in",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "9018083",
+      "name": "-字母f",
+      "font_class": "-zimuf",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "13196005",
+      "name": "Google+",
+      "font_class": "Google",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "14509956",
+      "name": "鸟类",
+      "font_class": "niaolei",
+      "unicode": "e6fe",
+      "unicode_decimal": 59134
+    },
+    {
+      "icon_id": "6489056",
+      "name": "车",
+      "font_class": "che",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "6699247",
+      "name": "修车店",
+      "font_class": "xiuchedian",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "10283821",
+      "name": "仪表盘",
+      "font_class": "changyongtubiao_yibiaopan",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "17294710",
+      "name": "洗车手",
+      "font_class": "xicheshou",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "11749525",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    },
+    {
+      "icon_id": "758453",
+      "name": "钞票",
+      "font_class": "chaopiao",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "12188872",
+      "name": "钥匙",
+      "font_class": "yuechi",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "12025963",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e7a7",
+      "unicode_decimal": 59303
+    },
+    {
+      "icon_id": "18170570",
+      "name": "火箭,快速,技术,升级",
+      "font_class": "rocket-full",
+      "unicode": "e9d7",
+      "unicode_decimal": 59863
+    },
+    {
+      "icon_id": "2075254",
+      "name": "浏览器-IE",
+      "font_class": "liulanqi-IE",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "14681818",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e6b9",
+      "unicode_decimal": 59065
+    },
+    {
+      "icon_id": "15783537",
+      "name": "app",
+      "font_class": "app",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "17827542",
+      "name": "小程序",
+      "font_class": "xiaochengxu",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    }
+  ]
+}

@@ -1,0 +1,503 @@
+.outside{
+    /* width: 1920px; */
+    height: 2598px;
+    margin: 0 auto;
+    border:1px solid black;
+}
+
+
+/* ###############头部##################### */
+
+.header{
+    width: 100%;
+    background-image: url("../picture/熊管家-首页-assets/首页1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    height: 1080px;
+    position: relative;
+}
+
+.leftbg{
+    width: 300px;
+	height: 946px;
+    background-color: rgba(0,0,0,0.5);
+    padding-top:134px;;
+}
+
+.xiong-logo{
+    width: 300px;
+	height: 100px;    text-align: center;
+    background-color: white;
+    position: relative;
+    border-bottom: 3px solid  #14916a;
+
+}
+
+.xiong-logo img{
+    margin-top:24px;
+}
+
+.xiong-logo::after{
+    content: "";
+    position: absolute;
+    border:6px solid #14916a;
+    top:0;
+    right: 0;
+    border-color:#14916a #14916a transparent transparent;
+    z-index: 10; 
+}
+
+
+.xiaoyuanyuan{
+    position: absolute;
+    bottom:0;
+    display: flex;
+    flex-direction: row;
+    width: 85px;
+    left: 50%;
+    margin-left: -42.5px;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+
+
+
+.xiaoyuanyuan div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:white;
+}
+
+
+.xiaoyuanyuan .yuan1{
+	background-color: #14916a;
+}
+
+
+.xiaoyuanyuan div:hover{
+    background-color:  #14916a;
+}
+
+/* ###########此处为导航栏此单################ */
+
+.nav{
+    width: 100%;
+    position: relative;
+
+}
+
+.contain{
+    width: 136px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 59px;
+}
+
+.content{
+    width: 136px;
+    height: 40px;
+    margin: 0 auto;
+  
+    margin-bottom: 23px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-sizing: border-box;
+    font-size: 17px;
+    line-height: 40px;
+    color: white;
+    padding-left: 31px;
+}
+.content1{
+    background-color: white;
+    color: #14916a;
+
+}
+
+.content:hover{
+    background-color: white;
+    color: #14916a;
+}
+
+
+
+
+/* ####################电话号码#################### */
+.phone{
+    width: 234px;
+    height: 73px;
+    border:1px solid #6f747f;
+    margin: 0 auto;
+    margin-top: 394px;
+}
+
+
+.phone-tb{
+    float: left;
+color: white;
+line-height: 73px;
+margin-left: 18px;
+font-size: 26px;
+}
+.phone-number{
+    float:left;
+   color: white;
+   margin-left: 17px;
+   line-height: 27px;
+   box-sizing: border-box;
+   padding-top:10px;
+   font-size: 16px;
+}
+
+
+/* #######################小图标########################## */
+
+
+.little-icont{
+    margin-top: 16px;
+    width: 100%;
+    padding:0 33px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+}
+.QR-code{
+    position: absolute;
+    top: 45px;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+    visibility: hidden;
+   
+    
+}
+.QR-code img{
+    width:100%;
+    height:100%;
+}
+
+.wechat:hover {
+    opacity: 0.5;
+}
+.wechat:hover +.QR-code{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/* ############################中间部分####################### */
+
+.middle{
+background-image: url("../picture/熊管家-首页-assets/首页背景.png");
+padding-bottom: 73px;
+
+}
+
+.middle-welcome{
+    /* 这里设置左右的两边的边距 */
+    /* margin: 0 130px;     */
+
+    padding-top: 106px;
+    width: 1200px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.title{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    height: 48px;
+}
+
+
+.title .title-left{
+    width: 7px;
+	height: 47px;
+	background-image: linear-gradient(0deg, 
+		#14916a 0%, 
+		#16da9d 100%), 
+	linear-gradient(
+		#14916a, 
+		#14916a);
+	background-blend-mode: normal, 
+        normal;
+    margin-right: 14px;
+}
+
+.title-right div:nth-of-type(1) span{
+    font-size: 32px;
+
+    color: #333333;
+
+}
+
+.title-right div:nth-of-type(2) span{
+  
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	color: #333333;
+    opacity: 0.5;
+    top: -4px;
+    position: relative;
+}
+
+
+.middle-welcome-comtents{
+    margin-top: 50px;
+    width: 485px;
+}
+
+.middle-welcome-comtents div{
+    font-size: 16px;
+    color: #333333;
+    font-family: MicrosoftYaHei;
+    line-height: 37px;
+}
+
+.middle-welcome-left{
+    position: relative;
+}
+
+
+
+/* ############联系我们#################### */
+.connet-us{
+    width: 164px;
+	height: 44px;
+	background-color: #ffffff;
+	box-shadow: 0px 5px 10px 0px 
+        rgba(11, 2, 5, 0.31), 
+        0px -5px 8px 0px 
+        rgba(11, 2, 5, 0.31)inset ;
+        
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    text-align: center;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 47px;
+
+    cursor: pointer;
+
+
+   
+}
+
+.connet-us span{
+    font-size: 24px;
+    font-family:MicrosoftYaHei;
+    font-weight: bold;
+    color: #14916a;
+    line-height: 44px;
+    margin-left: -18px;
+
+}
+
+
+.connet-us .toggle{
+   
+    position: absolute;
+    left: 131px;
+    top: 18px;
+
+    border-top: 5px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid #14916a;
+}
+
+.middle-welcome-right{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+.bottom{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #14916a;
+    bottom: 0;
+}
+
+
+
+
+/* #####################装修管家服务################## */
+
+
+.gifw-content{
+    margin-top: 44px;
+}
+
+.gjfw{
+
+    width: 1200px;
+    margin:0 auto;
+    padding-top: 106px;
+}
+
+
+.nav1{
+    margin: 0 -2.2px;
+}
+.nav1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.nav1 li{
+    float: left;
+    width: 25%;
+   
+}
+
+.gifw-contents{
+    width: 294px;
+    height: 202px;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+}
+
+
+/* .gifw-contents::after{
+    content: "量房";
+    position: absolute;
+    top:70%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color: #14916a;
+    opacity: 0.85;
+} */
+
+.gifw-contents .tcxg{
+    content: "量房";
+    position: absolute;
+    top:100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color:rgba(20,145,106,0.85);
+    box-sizing: border-box;
+    padding-left: 10px;
+    transition: all 0.3s;
+    overflow: hidden;
+    /* cursor: pointer; */
+}
+
+
+.tcxg div:nth-of-type(1){
+    font-family: MicrosoftYaHei;
+    font-size: 20px;
+    color: #ffffff;
+    opacity: 0.85;
+    line-height: 40px;
+}
+.tcxg div:nth-of-type(2){
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    color: #ffffff;
+    opacity: 0.85;
+    margin-top: -3px;
+}
+
+.gifw-contents:hover .tcxg{
+    top:70%;
+}
+
+
+/* ##################尾部部分############# */
+
+.footer-contain{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo{
+    margin-top: 51px;
+    background-color:white;
+    text-align: center;
+}
+
+.footer-phone{
+    margin: 0 auto;
+    width: 445px;
+    height: 68px;
+    border:1px solid rgba(0,0,0,0.1);
+    opacity: 0.8;
+    position: relative;
+    margin-top: 17px;
+
+}
+
+.footer-left,.footer-right{
+    width: 1px ;
+    height: 31px;
+    background-color: white;
+   
+    margin-top: 17.5px;
+   
+}
+.footer-left{
+    float: left;
+    margin-left: -1px;
+}
+.footer-right{
+    float: right;
+    margin-right: -1px;
+}
+
+.footer-phone .number1{
+
+    width: 390px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+    color:#14916a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.number1 div:nth-of-type(1){
+    font-size: 32px;
+    margin-right: 13px;
+    margin-left: 8px;
+}
+.number1 div:nth-of-type(2){
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ############页面最下面的一部分################ */
+
+.footer-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.f-f-left{
+    
+}

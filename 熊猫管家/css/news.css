@@ -1,0 +1,93 @@
+.outside{
+    margin: 0 auto;
+}
+.header{
+
+    background-image: url("../picture/熊管家-新闻动态-assets/home.png");
+    
+}
+
+/* ###########################上面为头部############## */
+
+
+.middle{
+    background-color: #fafafa;
+    padding-top:29px;
+}
+
+.aboutme > div:nth-of-type(1){
+    margin-left: 247px;
+}
+
+.contain{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding-top:20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.contain-nav li{
+    width: 100%;
+    
+}
+
+.content{
+    width: 1150px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+.content:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.content .content-content{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    border-bottom: 1px solid #eaeaea;
+}
+
+
+.content-content > div:nth-of-type(1){
+    margin-top: 13px;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.content-content > div:nth-of-type(1) a{
+    color: #333333;
+}
+
+.content-content > div:nth-of-type(2){
+    font-size: 14px;
+    color: #999999;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.content-content > div:nth-of-type(3){
+    font-size: 12px;
+    color: #999999;
+}
+
+.content-img{
+    margin-right: 30px;
+}
+.contentlast{
+    margin-bottom: 0px;
+}
+
+.more{
+  
+    margin-left: 19px;
+    font-size: 12px;
+    color: #14916a;
+}

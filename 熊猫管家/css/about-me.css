@@ -15,171 +15,6 @@
     /* border: 1px solid black; */
 }
 
-.header-top{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 94px;
-    background-color: rgba(0,0,0,0.29);
-}
-
-
-.header-top .top1{
-    height: 100%;
-    width: 362px;
-    background-color: #ffffff;
-    border-radius: 0px 0px 49px 0px;
-    
-    position: relative;
-}
-
-.top1::after{
-    position: absolute;
-    content: "";
-    top:0;
-    left: 0;
-    border-left: 10px solid #14916a;
-    border-right: 10px solid transparent;
-    border-top:9px solid #14916a;
-    border-bottom:9px solid transparent;
-}
-
-.top1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 58px;
-    box-sizing: border-box;
-}
-
-
-.top-nav li{
-    /* height: 100%; */
-    height: 95px;
-    width: 107px;
-    text-align: center;
-    float: left;
-    display:flex;
-    align-items: center;
-}
-
-.top-nav::after{
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.top-content{
-    width: 107px;
-    height: 36px;
-    border-top-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    /* background-color:white; */
-    line-height: 36px;
-    position: relative;
-
-    font-family: MicrosoftYaHei;
-    font-size: 16px;
-    color: rgba(255,255,255,0.5);
-    /* visibility: hidden; */
-    
-
-}
-
-
-.top-content::after{
-    content: "";
-    position: absolute;
-    top:0;
-    right: 0;
-    border:6px solid transparent;
-    border-color:#14916a #14916a transparent transparent;
-    visibility: hidden;
-}
-
-
-.top-content:hover{
-    background-color:white;
-    color: black;
-    
-
-}
-.top-content:hover::after{
-    visibility: visible;
-}
-.liaojiewomen{
-    background-color: white;
-    color: black;
-}
-.liaojiewomen::after{
-    visibility:visible;
-}
-
-
-.top3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-    
-}
-
-.top3 div{
-    margin-right: 27px;
-}
-
-.click:hover{
-    opacity: 0.6;
-}
-.click:hover + div{
-    visibility: visible;
-}
-
-.QR-code{
-    position: absolute;
-    top: 96px;
-    left: 14px;
-    width: 200px;
-    height: 200px;
-    visibility: hidden;
-   
-    
-}
-.QR-code img{
-    width:100%;
-    height:100%;
-}
-
-.aboutme{
-    width: 333px;
-	height: 130px;
-    background-color: rgba(20,145,106,0.8);
-
-    border-top-left-radius:40px ;
-    border-bottom-right-radius: 40px;
-    box-sizing: border-box;
-    padding-top: 35px;
-
-    position: absolute;
-    top:391px;
-    left: 362px;
-}
-
-
-.aboutme div:nth-of-type(1){
-    font-weight: bold;
-    font-size: 20px;
-    color: #ffffff;
-    margin-left: 192px; 
-}
-.aboutme div:nth-of-type(2){
-    font-size: 36px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-left: 156px;  
-    
-}
-
 
 /* ##########################头部已经结束 接下来我们来写中部内容###################### */
 
@@ -222,13 +57,13 @@
 }
 
 
-.contain-number1 div:nth-of-type(2){
+.contain-number1 >div:nth-of-type(2){
     font-size: 32px;
     color: #333333;
     line-height: 32px;
     margin-bottom: 7px;
 }
-.contain-number1 div:nth-of-type(3){
+.contain-number1 >div:nth-of-type(3){
     width: 180px;
     height: 26px;   
     border: solid 1px #b6b6b6;
@@ -336,6 +171,35 @@
     margin-top: -7px;
 }
 
+.number2-picture{
+    position: relative;
+}
+
+.left-small,.right-big{
+    position: absolute;
+    top:50%;
+    margin-top:-21px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #14916a;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 42px;
+    text-align: center;
+    color: white;
+   
+
+}
+
+.left-small{
+    left: -80px;
+    cursor: pointer;
+}
+.right-big{
+    right: -80px;
+    cursor: pointer;
+}
 
 
 

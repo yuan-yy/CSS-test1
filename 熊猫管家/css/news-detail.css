@@ -1,0 +1,41 @@
+
+.header{
+    background-image: url("../picture/熊管家-新闻详页-assets/head.png");
+}
+.aboutme > div:nth-of-type(1){
+    margin-left: 247px;
+}
+
+/* ############################以上为头部##################### */
+
+
+.middle{
+    background-color: #fafafa;   
+    padding-top: 29px;
+}
+
+.contain{
+    width: 1200px;
+    background-color: white;
+    margin: 0 auto;
+    border-top:5px solid #e8e8e8;
+}
+
+.contain > div:nth-of-type(1){
+    width: 1120px;
+    height: 70px;
+    font-size: 24px;
+    color: #333333;
+    line-height: 70px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom:1px solid #e8e8e8;
+}
+.contain-contain{
+    width: 1120px;
+    margin: 0 auto;
+}
+.contain-contain >div:nth-of-type(1){
+    height: 68px;
+    line-height: 68px;
+}

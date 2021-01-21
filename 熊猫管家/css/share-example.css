@@ -1,0 +1,108 @@
+.outside{
+    margin: 0 auto;
+}
+.header{
+    height: 600px;
+    background-image: url("../picture/熊管家-关于我们-assets/head.png");
+    
+    width: 100%;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+
+
+
+/* #################这里开始头部结束####################### */
+
+
+.middle{
+    width: 1200px;
+    margin:0 auto;
+    margin-top:37px;
+    padding-bottom: 20px;
+}
+
+.middle::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.middle-nav li{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+
+.middle-nav{
+  
+    margin:0 -10px;
+}
+
+
+.middle-nav .content{
+    height: 400px;
+    width: 590px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.content-yy{
+    position: absolute;
+    top:50%;
+    bottom:50%;
+    left: 50%;
+    right: 50%;
+    background-color: rgba(0,0,0,0.39);
+    text-align: center;
+    line-height: 340px;
+    color: transparent;
+    font-size: 0px;
+    font-weight: bold;
+    transition: all 0.5s;  
+}
+
+.content:hover .content-yy{
+    top:30px;
+    bottom:30px;
+    left: 30px;
+    right: 30px;
+    font-size: 27px;
+    color: white;
+    
+}
+
+.content::after{
+    content: "";
+    position: absolute;
+    border:15px solid transparent;
+    border-color:#14916a #14916a transparent transparent;
+    right: 0;
+    top:0;
+    
+}
+.content:hover::after{
+    visibility: hidden;
+}
+
+
+
+
+
+.content4{
+    margin-left: 1px;
+}
+
+.content5,.content6{
+    margin-top: 3px;
+}
+.content7,.content8{
+    margin-top: 1px;
+   
+}

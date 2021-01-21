@@ -12,6 +12,7 @@
 .middle{
     background-color: #fafafa;   
     padding-top: 29px;
+    
 }
 
 .contain{
@@ -19,6 +20,8 @@
     background-color: white;
     margin: 0 auto;
     border-top:5px solid #e8e8e8;
+    padding-bottom: 60px;
+    border-bottom: 10px solid #e8e8e8;
 }
 
 .contain > div:nth-of-type(1){
@@ -38,4 +41,109 @@
 .contain-contain >div:nth-of-type(1){
     height: 68px;
     line-height: 68px;
+}
+
+
+.contain-contain-top span{
+    font-size: 12px;
+}
+
+.contain-contain-top span:nth-of-type(1){
+    color: #14916a;
+}
+.contain-contain-top span:nth-of-type(2){
+    color: #a0a0a0;
+}
+.contain-contain-top span:nth-of-type(3){
+    color: #14916a;
+    margin-left: 10px;
+}
+.contain-contain-top span:nth-of-type(4){
+    color:#a0a0a0;
+}
+
+.contain-contain-middle{
+    height: 94px;
+    width:100%;
+    background-color: #fafafa;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left:24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+.contain-contain-middle >div{
+    line-height: 22px;
+    color: #999999;
+    font-size: 12px;
+}
+
+
+
+
+
+
+.contain-content{
+    margin-top: 33px;
+}
+
+
+.contain-content >div:nth-of-type(1){
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.contain-content-content > div:nth-of-type(1){
+    margin-bottom: 43px;
+}
+.contain-content-content > div:nth-of-type(2){
+    line-height: 35px;
+    margin-bottom: 43px;
+}
+.contain-content-content > div:nth-of-type(3){
+    line-height: 35px;
+    margin-bottom: 43px;
+}
+.contain-content-content > div:nth-of-type(4){
+    line-height: 35px;
+    /* margin-bottom: 43px; */
+   
+}
+.contain-content-content > div:nth-of-type(5){
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 32px;
+}
+
+.contain-content-content > div:nth-of-type(6){
+   
+}
+.contain-content-content > div:nth-of-type(7){
+    line-height: 35px;
+    
+    margin-top: 8px;
+
+}
+
+.contain-content-content > div:nth-of-type(8){
+    width: 100%;
+    height: 1px;
+    background-color: #e8e8e8;
+    margin-top:55px;
+}
+.contain-content-content > div:nth-of-type(9){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 27px;
+    /* margin-bottom: 60px; */
+}
+
+.contain-content-content > div:nth-of-type(9) >div span{
+    color: #14916a;
+
 }

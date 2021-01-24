@@ -70,6 +70,7 @@
     height: 10px;
     border-radius: 50%;
     background-color:white;
+    cursor: pointer;
 }
 
 
@@ -111,6 +112,10 @@
     color: white;
     padding-left: 31px;
 }
+.content6{
+    box-sizing: content-box;
+    width: 116px;
+}
 .content1{
     background-color: white;
     color: #14916a;
@@ -149,7 +154,8 @@ font-size: 26px;
    line-height: 27px;
    box-sizing: border-box;
    padding-top:10px;
-   font-size: 16px;
+   font-size: 22px;
+   font-weight: bold;
 }
 
 
@@ -376,17 +382,7 @@ padding-bottom: 73px;
 }
 
 
-/* .gifw-contents::after{
-    content: "量房";
-    position: absolute;
-    top:70%;
-    width: 100%;
-    left: 0;
-    right: 0;
-    bottom:0;
-    background-color: #14916a;
-    opacity: 0.85;
-} */
+
 
 .gifw-contents .tcxg{
     content: "量房";
@@ -401,6 +397,7 @@ padding-bottom: 73px;
     padding-left: 10px;
     transition: all 0.3s;
     overflow: hidden;
+    /* box-shadow: 5px 0 5px rgba(0,0,0,0.5); */
     /* cursor: pointer; */
 }
 
@@ -420,6 +417,10 @@ padding-bottom: 73px;
     margin-top: -3px;
 }
 
+.gifw-contents:hover{
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.3);
+    transform: translate(0,2px);
+}
 .gifw-contents:hover .tcxg{
     top:70%;
 }
@@ -427,190 +428,4 @@ padding-bottom: 73px;
 
 /* ##################尾部部分############# */
 
-.footer-contain{
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-logo{
-    margin-top: 51px;
-    background-color:white;
-    text-align: center;
-}
-
-.footer-phone{
-    margin: 0 auto;
-    width: 445px;
-    height: 68px;
-    border:1px solid rgba(0,0,0,0.1);
-    opacity: 0.8;
-    position: relative;
-    margin-top: 17px;
-
-}
-
-.footer-left,.footer-right{
-    width: 1px ;
-    height: 31px;
-    background-color: white;
-   
-    margin-top: 17.5px;
-   
-}
-.footer-left{
-    float: left;
-    margin-left: -1px;
-}
-.footer-right{
-    float: right;
-    margin-right: -1px;
-}
-
-.footer-phone .number1{
-
-    width: 390px;
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right: 0;
-    margin: auto;
-    color:#14916a;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.number1 div:nth-of-type(1){
-    font-size: 32px;
-    margin-right: 13px;
-    margin-left: 8px;
-}
-.number1 div:nth-of-type(2){
-    font-size: 22px;
-    font-weight: bold;
-}
-
 /* ############页面最下面的一部分################ */
-
-.footer-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 47px;
-}
-
-.f-f-left tr td{
-    height:  28px;
-}
-
-.f-f-left tr td:nth-of-type(2){
-    padding-left: 5px;
-}
-
-.f-f-left>div{
-    font-family: MicrosoftYaHei;
-    color: #000000;
-    margin-bottom: 25px;
-}
-
-
-.f-f-middle{
-    margin-left: -12px;
-}
-
-
-
-
-.ff{
-    font-size: 16px;
-}
-.ff1{
-    font-family: MicrosoftYaHei;
-    font-size: 12px;
-    color: #555555;
-}
-
-
-.f-f-nav{
-    margin-top: 31px;
-    margin-bottom: 23px;
-}
-
-.f-f-nav::after{
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.f-f-nav li{
-    float: left;
-    font-size: 12px;
-}
-
-.nsbdzxgj{
-    padding-left: 57px;
-}
-.f-f-nav li a{
-    font-family: MicrosoftYaHei;
-    font-size: 12px;
-    color: #555555;
-    /* #f3f3f3 */
-}
-
-.f-f-right div:nth-of-type(1){
-    margin-bottom: 32px;
-
-}
-
-.f-f-right div:nth-of-type(3){
-    font-size: 12px;
-    color: #14916a;
-    cursor: pointer;
-}
-
-.little-icont1{
-    margin-bottom: 22px;
-    position: relative;
-}
-
-.f-f-right .little-icont1 img{
-    margin-right: 18px;
-}
-
-.QR-code2{
-    position: absolute;
-    top: -174px;
-    left: 30px;
-    width: 160px;
-    height: 160px;
-    visibility: hidden;
-}
-.QR-code2 img{
-    width: 100%;
-    height: 100%;
-}
-.wechat:hover+.QR-code2{
-    visibility: visible
-}
-
-/* #############最小面######## */
-.line{
-    height: 1px;
-    width: 100%;
-    background-color: #d3d3d3;
-}
-
-
-
-.fotter-bottom{
-    width: 355px;
-	height: 13px;
-	font-family: MicrosoftYaHei;
-	font-size: 12px;
-	/* line-height: 24px; */
-    color: #555555;
-    margin:0 auto;
-    margin-top:17px;
-    margin-bottom: 17px;
-}

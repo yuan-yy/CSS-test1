@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .all{
+        background-color: rgba(0,0,0,0.5);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .div1{
+        width: 400px;
+        height: 600px;
+        background-color: red;
+    }
+
+    .div2{
+        width: 600px;
+        height: 600px;
+        background-color: green;
+    }
+    .div3{
+        width: 200px;
+        height: 600px;
+        background-color: blue;
+    }
+    .div-left{
+        flex-grow: 2;
+    }
+    .div-right{
+        flex-grow: 1;
+    }
+
+</style>
+<body>
+
+    <div class="all">
+        <div class="div1"></div>
+        <div class="div-left"></div>
+        <div class="div2"></div>
+        <div class="div-right"></div>
+        <div class="div3"></div>
+    </div>
+</body>
+
+</html>

@@ -24,6 +24,16 @@
     background-color: rgba(0,0,0,0.29);
 }
 
+.left-c{
+    flex-grow: 5;
+}
+.right-c{
+    flex-grow: 2;
+}
+
+.top3{
+    margin-right: 23px;
+}
 
 .header-top .top1{
     height: 100%;
@@ -139,7 +149,7 @@
 .QR-code{
     position: absolute;
     top: 96px;
-    left: 14px;
+    left: 28px;
     width: 200px;
     height: 200px;
     visibility: hidden;
@@ -151,7 +161,7 @@
     height:100%;
 }
 
-.aboutme{
+.aboutme1{
     width: 333px;
 	height: 130px;
     background-color: rgba(20,145,106,0.8);
@@ -162,18 +172,19 @@
     padding-top: 35px;
 
     position: absolute;
-    top:391px;
-    left: 362px;
+    top: -199px;
+    left: 0px;
+    opacity: 0.8;
 }
 
 
-.aboutme div:nth-of-type(1){
+.aboutme1 div:nth-of-type(1){
     font-weight: bold;
     font-size: 20px;
     color: #ffffff;
     margin-left: 192px; 
 }
-.aboutme div:nth-of-type(2){
+.aboutme1 div:nth-of-type(2){
     font-size: 36px;
     font-weight: bold;
     color: #ffffff;

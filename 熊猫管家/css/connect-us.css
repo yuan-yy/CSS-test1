@@ -1,0 +1,275 @@
+.header{
+    background-image: url("../picture/熊管家-联系我们-assets/head.png");
+}
+.aboutme > div:nth-of-type(1){
+    margin-left: 171px;
+}
+.aboutme >div:nth-of-type(2){
+    margin-left: 160px;
+}
+
+
+/* #######################上面为头部################## */
+
+
+.middle{
+    background-color: #fafafa;
+    /* padding-bottom: 100px; */
+}
+.middle .contain{
+    width: 1200px;
+    background-color: #ffffff;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50px;  
+    position: relative; 
+}
+
+
+.aboutme1{
+
+    width: 333px;
+    height: 130px;
+    background-color: rgba(20,145,106,0.8);
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-sizing: border-box;
+    padding-top: 35px;
+    position: absolute;
+    top: -199px;
+    left: 0px;
+    opacity: 0.8;
+}
+.aboutme1 > div:nth-of-type(1){
+    margin-left: 171px;
+}
+.aboutme1 >div:nth-of-type(2){
+    margin-left: 160px;
+}
+
+
+
+.contain-left{
+    width: 600px;
+    margin-top: 55px;
+    box-sizing: border-box;
+    padding-left: 48px;
+    color: #333333;
+    font-weight: bold;
+
+}
+
+
+.contain-left > div:nth-of-type(1){
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+.contain-right{
+    width: 600px;
+}
+.contain-left > div:nth-of-type(2) tr td{
+    height: 35px;
+
+}
+.contain-left-td{
+    font-weight: normal;
+}
+.contain-left > div:nth-of-type(2){
+    margin-top: 14px;
+}
+
+.contain-left > div:nth-of-type(3){
+    font-size: 14px;
+    color: #999999;
+    margin-top: 8px;
+}
+
+.qqr-code{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 63px;
+}
+.qqr-code >div:nth-of-type(1){
+    margin-right: 40px;
+}
+.qqr-code >div:nth-of-type(2){
+    width: 223px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qqr-code-er > div:nth-of-type(1){
+    font-size: 24px;
+    color: #333333;
+}
+.qqr-code-er > div:nth-of-type(2){
+    font-size: 18px;
+    color: #333333;
+    margin-top: 12px;
+}
+.qqr-code-er > div:nth-of-type(2) a{
+    color:#14916a;
+}
+
+
+/* #############右边############### */
+
+input{
+    text-indent: 10px;
+    border:1px solid #bdbcb8;
+}
+
+select{
+    width: 274px;
+    height: 40px;
+}
+.contain-right{
+    width: 600px;
+    margin-top: 55px;
+    box-sizing: border-box;
+    color: #333333;
+    border-left: 1px solid #dfdfdf;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+     */
+    align-items: center;
+    
+
+}
+
+.right-box{
+    width: 272px;
+    height: 40px;
+}
+
+.contain-right1{
+    font-size: 24px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 11px;
+}
+
+
+.right-table{
+    border-spacing: 0px 19px;
+}
+
+.right-table tr{
+    margin-top:19px;
+}
+
+.right-table tr td{
+    
+        margin-right: 67px;
+        width: 100px;
+        text-align: right;
+        padding-right: 30px;
+        font-weight: bold;
+}
+.right-table tr td span{
+    color:red;
+}
+
+.input11{
+    width: 274px;
+    height: 40px;
+}
+.input11::-webkit-input-placeholder{
+    color:#333333;
+    font-size:16px;
+}
+.input11::-webkit-calendar-picker-indicator {
+    opacity: 100;
+ }
+ input::-webkit-input-placeholder {
+    font-size: 16px;
+}
+
+
+.btn-liji {
+    width: 272px;
+    height: 60px;
+    background-color: #333333;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    color: #ffffff;
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;
+    border-top-right-radius:30px;
+    border-bottom-right-radius:30px;
+    margin-top: 37px;
+    cursor: pointer;
+}
+
+#container {width:100%; height: 550px; 
+
+
+}  
+
+.footer{
+    /* margin-top: -550px; */
+    border-top: 1px solid rgba(225,225,225);
+}
+
+.gaodeditu{
+    position: relative;
+    background-color: black;;
+    height: 550px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(225,225,225);
+}
+
+.gaodeditu::after{
+    position: absolute;
+    content: "";
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 50%;
+    background-color:rgba(0,0,0,0.4);
+    margin-right:600px;
+
+}   
+.gaodeditu::before{
+    position: absolute;
+    content: "";
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    background-color:rgba(0,0,0,0.4);
+    margin-left: 600px;
+    z-index: 1;
+
+}
+
+
+/* ###############天气预报############### */
+.info{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color:white;
+}
+.weather{
+    width:5rem;
+    display:inline-block;
+    padding-left:0.5rem;
+}
+.sharp{
+    height: 1rem;
+    width: 1rem;
+    background-color: white;
+    transform: rotateZ(45deg);
+    box-shadow: 2px 2px 3px rgba(114, 124, 245, .5);
+    position: inherit;
+    margin-left: 10.5rem;
+    margin-top: -6px;
+}

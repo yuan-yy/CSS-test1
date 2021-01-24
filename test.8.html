@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=您申请的key值"></script>
 </head>
-
 <style>
-
-    div{
-        width: 100px;
-        height: 100px;
-        position: absolute;
+    #container {
+        width: 800px;
+        height: 600px;
     }
-    .div1{
-  
-        /* background-color: red; */
-        border: 10px solid red;
-    }
-    .div2{
-        top:70px;
-        left: 20px;
-        border: 10px solid green;
-        /* background-color: green; */
-        opacity: 0.99;
-        z-index: 2;
-    }
-    .div3{
-        top:90px;
-        left:40px;
-        border: 10px solid hotpink;
-        /* background-color: hotpink; */
-    }
-
-    
 </style>
+
 <body>
-    <div class="div1"></div>
-    <div class="div2"></div>
-    <div class="div3"></div>
+    <div id="container"></div>
+
+
+
+
+    <!-- <iframe width="100%" height="600px" src="https://m.amap.com/navi/?dest=116.470098,39.992838&destName=成都&hideRouteIcon=1&key=961470344f9c1e987a071a7aced57d11" frameborder="100"></iframe> -->
 </body>
+
+<script>
+    var map = new AMap.Map('container');
+    var map = new AMap.Map('container', {
+        zoom: 17,//级别
+        center: [103.870149, 30.691363],//中心点坐标
+        viewMode: '3D'//使用3D视图
+    });
+    map.setMapStyle('amap://styles/grey');
+</script>
+
 </html>

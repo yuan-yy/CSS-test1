@@ -22,6 +22,14 @@
     border-top:5px solid #e8e8e8;
     padding-bottom: 60px;
     border-bottom: 10px solid #e8e8e8;
+    position: relative;
+}
+.aboutme1{
+    position: absolute;
+}
+
+.aboutme1 > div:nth-of-type(1){
+    margin-left: 165px;
 }
 
 .contain > div:nth-of-type(1){
@@ -147,3 +155,7 @@
     color: #14916a;
 
 }
+.contain-content-content > div:nth-of-type(9) >div a{
+    color: #333333;
+}
+

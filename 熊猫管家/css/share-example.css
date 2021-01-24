@@ -2,8 +2,8 @@
     margin: 0 auto;
 }
 .header{
-    height: 600px;
-    background-image: url("../picture/熊管家-关于我们-assets/head.png");
+    height: 500px;
+    background-image: url("../picture/熊管家-案例分享-assets/head.png");
     
     width: 100%;
    
@@ -14,8 +14,13 @@
     /* border: 1px solid black; */
 }
 
+.aboutme{
+    top: 283px;
+}
 
-
+.aboutme > div:nth-of-type(1){
+    margin-left: 247px;
+}
 
 /* #################这里开始头部结束####################### */
 
@@ -25,6 +30,16 @@
     margin:0 auto;
     margin-top:37px;
     padding-bottom: 20px;
+    position: relative;
+}
+.aboutme1{
+    position: absolute;
+    top: -236px;
+    left: -11px;
+}
+
+.aboutme1 > div:nth-of-type(1){
+    margin-left: 249px;
 }
 
 .middle::after{
